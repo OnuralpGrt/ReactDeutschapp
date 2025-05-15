@@ -876,520 +876,174 @@ const questions = {
       answer: 1
     },
     {
-      question: 'Ich _____ 20 Jahre alt.',
-      options: ['bin', 'habe'],
-      answer: 0
-    },
-    {
-      question: 'Ich ____ keine Geschwister.',
-      options: ['bin', 'habe'],
-      answer: 1
-    },
-    {
-      question: 'Ich ____ heute keine Zeit.',
-      options: ['bin', 'habe'],
-      answer: 1
-    },
-    {
-      question: 'Ich ____ heute keinen Unterricht.',
-      options: ['bin', 'habe'],
-      answer: 1
-    },
-    {
-      question: 'Ich ____ eine Studentin.',
-      options: ['bin', 'habe'],
-      answer: 0
-    },
-    {
-      question: 'Wir ____ zu Hause.',
-      options: ['sind', 'haben'],
-      answer: 0
-    },
-    {
-      question: 'Was ____ du von Beruf?',
-      options: ['bist', 'hast'],
-      answer: 0
-    },
-    {
-      question: '____ du einen Stift?',
-      options: ['Bist', 'Hast'],
-      answer: 1
-    },
-    {
-      question: '____ du krank?',
-      options: ['Bist', 'Hast'],
-      answer: 0
-    },
-    {
-      question: '____ du ein Wörterbuch?',
-      options: ['Bist', 'Hast'],
-      answer: 1
-    },
-    {
-      question: '____ du Hausaufgaben?',
-      options: ['Bist', 'Hast'],
-      answer: 1
-    },
-    {
-      question: 'Du ____ sehr nett.',
-      options: ['bist', 'hast'],
-      answer: 0
-    },
-    {
-      question: 'Ich ____ eine Wohnung.',
-      options: ['bin', 'habe'],
-      answer: 1
-    },
-    {
-      question: '____ ihr ein Auto?',
-      options: ['Seid', 'Habt'],
-      answer: 1
-    },
-    {
-      question: '____ ihr an der Uni?',
-      options: ['Seid', 'Habt'],
-      answer: 0
-    },
-    {
-      question: 'Ihr ____ zu spät.',
-      options: ['seid', 'habt'],
-      answer: 0
-    },
-    {
-      question: 'Ich ____ einen Termin.',
-      options: ['bin', 'habe'],
-      answer: 1
-    },
-    {
-      question: 'Sie ____ eine Lehrerin von Beruf.',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Ich ____ keinen Beruf.',
-      options: ['bin', 'habe'],
-      answer: 1
-    },
-    {
-      question: 'Wir ____ verheiratet und ____ zwei Kinder.',
-      options: ['sind / haben', 'haben / sind'],
-      answer: 0
-    },
-    {
-      question: '____ Sie verheiratet?',
-      options: ['Sind', 'Haben'],
-      answer: 0
-    },
-    {
-      question: '____ Sie Ihren Ausweis dabei?',
-      options: ['Sind', 'Haben'],
-      answer: 1
-    },
-    {
-      question: 'Wie ____ Ihre Handynummer?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Meine Wohnung ____ zwei Zimmer.',
-      options: ['ist', 'hat'],
-      answer: 1
-    },
-    {
-      question: 'Wie ____ Ihr Familienname bitte?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Meine Kollegin ____ leider nicht da.',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: '____ Sie eine Türkin?',
-      options: ['Sind', 'Haben'],
-      answer: 0
-    },
-    {
-      question: 'Wo ____ der Deutschkurs?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Wie ____ deine Adresse?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: '____ ihr noch Fragen?',
-      options: ['Seid', 'Habt'],
-      answer: 1
-    },
-    {
-      question: 'Das ____ kein Problem.',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Entschuldigen Sie, wir ____ ein Problem.',
-      options: ['sind', 'haben'],
-      answer: 1
-    },
-    {
-      question: 'Entschuldigen Sie, wo ____ die Post?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Guten Tag, ____ hier noch frei?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Es tut mir leid, wir ____ heute keinen Platz.',
-      options: ['sind', 'haben'],
-      answer: 1
-    },
-    {
-      question: 'Hallo, mein Name ____ Deniz.',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: '____ Sie Kleingeld?',
-      options: ['Sind', 'Haben'],
-      answer: 1
-    },
-    {
-      question: 'Tut mir leid, ich ____ kein Geld dabei.',
-      options: ['bin', 'habe'],
-      answer: 1
-    },
-    {
-      question: 'Wer ____ ein Wörterbuch?',
-      options: ['ist', 'hat'],
-      answer: 1
-    },
-    {
-      question: 'Wer ____ neu hier?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Wer ____ Wasser dabei?',
-      options: ['ist', 'hat'],
-      answer: 1
-    },
-    {
-      question: '____ Istanbul die Hauptstadt von der Türkei?',
-      options: ['Ist', 'Hat'],
-      answer: 0
-    },
-    {
-      question: '____ Deutsch Ihre Muttersprache?',
-      options: ['Ist', 'Hat'],
-      answer: 0
-    },
-    {
-      question: '____ Sie Hobbys?',
-      options: ['Haben', 'Sind'],
-      answer: 0
-    },
-    {
-      question: 'Es ____ zu laut hier.',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: '____ du einen Computer?',
-      options: ['Hast', 'Bist'],
-      answer: 0
-    },
-    {
-      question: 'Wo ____ meine Brille?',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Er ____ Fieber.',
-      options: ['ist', 'hat'],
-      answer: 1
-    },
-    {
-      question: 'Das ____ nicht meine Tasche.',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: 'Der Tisch ____ teuer.',
-      options: ['ist', 'hat'],
-      answer: 0
-    },
-    {
-      question: '____ du Lust auf ein Spiel?',
-      options: ['Bist', 'Hast'],
-      answer: 1
-    },
-    {
-      question: '….. Kleid findest du schöner?  - …..  rote hier.',
-      options: ['Welchen – Diesen', 'Welches – Dieses', 'Welche – Diese'],
-      answer: 1
-    },
-    {
-      question: 'Wir sind auf einer Insel und hier ….. keine Autos fahren.',
-      options: ['müssen', 'können', 'dürfen'],
-      answer: 2
-    },
-    {
-      question: 'Warum geht Tim nicht zur Schule? - Weil …. .',
-      options: ['krank er ist.', 'er krank ist.', 'er ist krank.'],
-      answer: 1
-    },
-    {
-      question: 'Heute regnet es. ___ können wir nicht draußen spielen.',
-      options: ['Deshalb', 'Denn', 'Aber'],
-      answer: 0
-    },
-    {
-      question: 'Claudia, hast du …. Notizbuch gesehen? -  Ja, es liegt … Regal.',
-      options: ['mein – im', 'meine – ins', 'mein – ins'],
-      answer: 0
-    },
-    {
-      question: 'Kommst du mit ins Kino? – Nein, ich kann diesmal ….. .',
-      options: ['nicht', 'kein', 'nie'],
-      answer: 0
-    },
-    {
-      question: 'Was ….. man hier alles machen?',
-      options: ['kannt', 'kann', 'könne'],
-      answer: 1
-    },
-    {
-      question: 'Kommt ihr heute? - Nein,  leider haben wir heute …. Zeit. …. morgen kommen wir gerne.',
-      options: ['keine - Aber', 'kein - Denn', 'keine – Weil'],
-      answer: 0
-    },
-    {
-      question: 'Kann mir jemand ein … und … Buch empfehlen?',
-      options: ['spannendes – fesselndes', 'langweiliges – uninteressantes', 'dünnes  - zerrissenes'],
-      answer: 0
-    },
-    {
-      question: 'Welcher Pullover gefällt dir am besten?  - Dieser … sieht gut aus.',
-      options: ['schwarzen', 'schwarze', 'schwarzes'],
-      answer: 1
-    },
-    {
-      question: 'Was wünscht du dir zu Weihnachten? - Ich wünsche … einen neuen Schal.',
-      options: ['mir', 'mich', 'meinen'],
-      answer: 0
-    },
-    {
-      question: 'Guten Tag! Mein Name ist Schneider. Ich möchte bitte mit ….. sprechen.',
-      options: ['Herr Fischer', 'Herrn Fischer', 'Herren Fischer'],
-      answer: 1
-    },
-    {
-      question: 'Seit wann leben Sie in Berlin? Seit  … Jahr.',
-      options: ['ein', 'einen', 'einem'],
-      answer: 2
-    },
-    {
-      question: 'Was macht er gern? - … .',
-      options: ['Er sieht fern gern .', 'Er sieht gern fern.', 'Er fernsehen gern.'],
-      answer: 1
-    },
-    {
-      question: 'Sylvester ist am …. Dezember.',
-      options: ['einunddreizigsten', 'einunddreißigsten', 'einsunddreizigsten'],
-      answer: 1
-    },
-    {
-      question: 'Mein Urlaub in den Alpen war super! – Schön, dass es … dort gefallen hat.',
-      options: ['dir', 'mir', 'ihm'],
-      answer: 0
-    },
-    {
-      question: 'Ich bin der Meinung, … du mitfahren solltest.',
-      options: ['dass', 'ob', 'wenn'],
-      answer: 0
-    },
-    {
-      question: 'Möchten Sie bestellen? – Ja, ich__________ ein Schnitzel und eine Cola.',
-      options: ['zahle', 'würde gern', 'hätte gern'],
-      answer: 2
-    },
-    {
-      question: 'Wann ist Vanessa geboren? -  ….',
-      options: ['Am sechsten April.', 'Im sechsten April.', 'Um sechsten April.'],
-      answer: 0
-    },
-    {
-      question: 'Schmeckt dir die Pizza nicht? - …..',
-      options: ['Ja, sie schmeckt mir.', 'Doch, sie schmeckt mir.', 'Ich esse gerne Pizza.'],
-      answer: 1
-    },
-    {
-      question: 'Welche Kombination passt nicht?',
-      options: ['Downloaden-Hochladen', 'Produktion-Herstellung', 'Experiment-Versuch', 'Produkt-Ware'],
+      question: 'Das Wetter ist _____ heute.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
       answer: 3
     },
     {
-      question: 'Welche Kombination passt nicht?',
-      options: ['Reservierung-Buchung', 'Start - Ende', 'Event-Veranstaltung', 'Studie - Forschung'],
+      question: 'Ein _____ läuft im Park.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
       answer: 1
     },
     {
-      question: 'Welche Kombination passt nicht?',
-      options: ['Äußerlichkeit-Innerlichkeit', 'Tiefe-Höhe', 'Länge-Breite', 'Umgebung-Gegend'],
-      answer: 3
+      question: 'Er ________ mit einem Ball spielen.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
+      answer: 11
     },
     {
-      question: 'Welche Kombination passt nicht?',
-      options: ['Hinauf-Hinunter', 'Draußen-im Freien', 'Drinnen-Draußen', 'Hinein-Hinaus'],
-      answer: 1
+      question: 'Ich möchte im See _____ , ______ er ist kalt.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
+      answer: 5
     },
     {
-      question: 'Was passt nicht?',
-      options: ['die Einwohnerzahl', 'die Fläche', 'die Wahl', 'die Nachbarländer'],
+      question: 'Mein Bruder hat einen _____ Ball.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
+      answer: 10
+    },
+    {
+      question: 'Wir _____ Pizza zum Mittagessen im Park.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
+      answer: 8
+    },
+    {
+      question: 'Eine Katze ____________ neben uns. Die Katze ist sehr _____ und süß.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
       answer: 2
     },
     {
-      question: 'Was passt nicht?',
-      options: ['Stabilität-Schwankung', 'Anstieg-Wachstum', 'Reduzierung-Vermehrung', 'Senkung-Steigerung'],
-      answer: 1
+      question: 'Manche ________ machen Picknick.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
+      answer: 7
     },
     {
-      question: 'Was passt nicht? Geld .............',
-      options: ['sparen', 'ausgeben', 'verbrauchen', 'abheben'],
-      answer: 2
-    },
-    {
-      question: 'Was passt nicht? Geld .....',
-      options: ['kaufen', 'anlegen', 'verdienen', 'überweisen'],
+      question: 'Zwei ___________ Kinder ______________ und hören ____________.',
+      options: ['kleine', 'Hund', 'liegt', 'schön', 'tanzen', 'schwimmen', 'klein', 'Familien', 'essen', 'Musik', 'großen', 'möchte', 'aber'],
       answer: 0
     },
     {
-      question: 'Was passt nicht? Medikamente .........',
-      options: ['nehmen', 'verschreiben', 'heilen', 'schicken'],
-      answer: 3
-    },
-    {
-      question: 'Was passt nicht? Patienten ..........',
-      options: ['untersuchen', 'suchen', 'behandeln', 'überweisen'],
-      answer: 1
-    },
-    {
-      question: 'Was passt? Maßnahmen .....',
-      options: ['bekommen', 'nehmen', 'sein', 'treffen'],
-      answer: 3
-    },
-    {
-      question: 'Was passt? Erfahrungen .....',
-      options: ['sammeln', 'finden', 'geben', 'nehmen'],
+      question: 'Ich habe Deutsch _______________.',
+      options: ['gelernt', 'gelernen', 'gelerntet'],
       answer: 0
     },
     {
-      question: 'Was gehört nicht zu einer Bewerbungsmappe?',
-      options: ['die Rechnung', 'Zeugnisse und Bescheinigungen', 'ein Foto', 'ein Bewerbungsschreiben', 'der Lebenslauf'],
+      question: 'Wir haben einen Apfel _______________.',
+      options: ['gegessen', 'gegesset', 'gegess'],
       answer: 0
     },
     {
-      question: 'Welchen Teil umfasst der Lebenslauf nicht?',
-      options: ['Berufserfahrung', 'Schulabschluss', 'EDV-Kenntnisse', 'Ausbildung der Kinder', 'Sprachkenntnisse'],
-      answer: 3
-    },
-    {
-      question: 'Welche Information gehört nicht zum Reklamationsschreiben?',
-      options: ['die Rechnungsnummer', 'Mit wem ich das Produkt gekauft habe', 'das Rechnungs- und Lieferdatum', 'Modell des Artikels', 'ausführliche Beschreibung des Problems'],
-      answer: 1
-    },
-    {
-      question: 'Welche Rechte hat man bei einer Reklamation?',
-      options: ['das Produkt selbst reparieren', 'Reparatur', 'einen Gutschein bekommen', 'das Geld zurückbekommen', 'umtauschen'],
+      question: 'Sie hat ein Bild _______________.',
+      options: ['gemalt', 'gemalen', 'gemalet'],
       answer: 0
     },
     {
-      question: 'Welche Schulabschlüsse braucht man für die Universitätsaufnahme?',
-      options: ['die Hochschulreife', 'Teilnahmebescheinigung für den Deutschkurs am Goethe Institut', 'den Führerschein', 'das Abitur', 'den Hauptschulabschluss'],
-      answer: 1
-    },
-    {
-      question: 'Welche Tätigkeit gehört nicht zum Berufsalltag?',
-      question: 'Wer ______ zur Party ______?',
-      options: ['ist .... gekommt', 'hat ….. gekommt', 'ist ….. gekommen'],
-      answer: 2
-    },
-    {
-      question: '______ Javier aus der Firma auch dabei? Du fragst jetzt, woher ich ihn kenne. :)',
-      options: ['hat', 'ist', 'war'],
-      answer: 2
-    },
-    {
-      question: 'Wir ______ uns vor zwei Jahren im Sprachkurs ______.',
-      options: ['haben ..... gekennlernt', 'haben ……. kennengelernt', 'haben …. kennenlernte'],
-      answer: 1
-    },
-    {
-      question: 'Er ______ damals mein Tandempartner.',
-      options: ['war', 'ist', 'hat', 'hatte'],
+      question: 'Du hast viel _______________.',
+      options: ['gearbeitet', 'gearbeit', 'gearbeitet'],
       answer: 0
     },
     {
-      question: 'Er ______ mit mir Spanisch ______.',
-      options: ['hat ...... gesprecht', 'hat …. gesprochen'],
-      answer: 1
-    },
-    {
-      question: 'Und ich ______ mit ihm auf Deutsch ______.',
-      options: ['hat ...... gereden', 'habe ….. geredet'],
-      answer: 1
-    },
-    {
-      question: 'Wir ______ uns auch viel ______.',
-      options: ['hat ........ geschreibt', 'haben …. geschrieben', 'haben ….. geschreiben'],
-      answer: 1
-    },
-    {
-      question: 'Weißt du, wir ______ uns auch mal in einer Kneipe ______.',
-      options: ['haben …… getroffen', 'haben ……. getrefft'],
+      question: 'Papa hat das Auto _______________.',
+      options: ['gewaschen', 'gewaschen', 'gewaschen'],
       answer: 0
     },
     {
-      question: '______ er für dich Blumen ______?',
-      options: ['hat ..... mitbringen', 'hat ….. mitgebracht'],
-      answer: 1
-    },
-    {
-      question: 'Was ______er ______?',
-      options: ['hat …. angezogen', 'hat ….. an', 'hat ….. geanzieht'],
+      question: 'Oma hat Kuchen _______________.',
+      options: ['gebacken', 'gebackt', 'gebacket'],
       answer: 0
     },
     {
-      question: 'Mensch! ______ ihr nichts ______? Zeig doch!',
-      options: ['habt ........ gefotografiert', 'habt ….. fotografiert'],
-      answer: 1
-    },
-    {
-      question: 'Hoffentlich ______ Peter seine Kamera nicht ______.',
-      options: ['hat .... vergesst', 'hat …. vergessen', 'hat … gevergesst'],
-      answer: 1
-    },
-    {
-      question: '______ du auch Geschenke ______?',
-      options: ['hast  ….  bekommen', 'hat ….. gebekommen', 'hast ….. bekommt'],
+      question: 'Ich habe einen Brief _______________.',
+      options: ['geschrieben', 'geschreibet', 'geschreibt'],
       answer: 0
     },
     {
-      question: '______ die Geschenke dir ______?',
-      options: ['haben ........ gefallen', 'hat ….. gefallt', 'hat …. gefallen'],
+      question: 'Ihr habt Musik _______________.',
+      options: ['gehört', 'gehöret', 'gehörtet'],
       answer: 0
     },
     {
-      question: 'Das war bestimmt eine tolle Party. Ich muss aber schnell los. Ich habe gleich ein Meeting und habe mich leider ______.',
-      options: ['verspäten', 'verspätung', 'verspätet'],
-      answer: 2
+      question: 'Lisa hat das Fenster _______________.',
+      options: ['geöffnet', 'geöffnt', 'geöffnet'],
+      answer: 0
+    },
+    {
+      question: 'Wir haben im Park _______________.',
+      options: ['gespielt', 'gespiel', 'gespielt'],
+      answer: 0
+    },
+    {
+      question: 'Er hat eine Geschichte _______________.',
+      options: ['erzählt', 'erzählen', 'erzähltet'],
+      answer: 0
+    },
+    {
+      question: 'Du hast ein Buch _______________.',
+      options: ['gelesen', 'gelesst', 'geleset'],
+      answer: 0
+    },
+    {
+      question: 'Wir haben das Zimmer _______________.',
+      options: ['aufgeräumt', 'aufräumen', 'aufgeräumet'],
+      answer: 0
+    },
+    {
+      question: 'Ich habe Wasser _______________.',
+      options: ['getrunken', 'getrunk', 'getrunkt'],
+      answer: 0
+    },
+    {
+      question: 'Ihr habt sehr laut _______________.',
+      options: ['gelacht', 'gelachen', 'gelachtet'],
+      answer: 0
+    },
+    {
+      question: 'Sie hat das Brot _______________.',
+      options: ['gegessen', 'gegesset', 'gegess'],
+      answer: 0
+    },
+    {
+      question: 'Wir haben einen Film _______________.',
+      options: ['gesehen', 'geseht', 'gesehet'],
+      answer: 0
+    },
+    {
+      question: 'Ich habe meine Hausaufgaben _______________.',
+      options: ['gemacht', 'gemachen', 'gemachet'],
+      answer: 0
+    },
+    {
+      question: 'Er hat mit dem Hund _______________.',
+      options: ['gespielt', 'gespiel', 'gespielt'],
+      answer: 0
+    },
+    {
+      question: 'Du hast das Licht _______________.',
+      options: ['ausgemacht', 'ausgemachen', 'ausgemachet'],
+      answer: 0
+    },
+    {
+      question: 'Ihr habt das Bild _______________.',
+      options: ['gemalt', 'gemalen', 'gemalet'],
+      answer: 0
+    },
+    {
+      question: 'Ich habe meine Tasche _______________.',
+      options: ['gepackt', 'gepacken', 'gepacket'],
+      answer: 0
+    },
+    {
+      question: 'Wir haben die Hausaufgabe _______________.',
+      options: ['gemacht', 'gemachen', 'gemachet'],
+      answer: 0
+    },
+    {
+      question: 'Sie hat mit mir _______________.',
+      options: ['gesprochen', 'gesprechen', 'gesprecht'],
+      answer: 0
+    },
+    {
+      question: 'Du hast den Ball _______________.',
+      options: ['gebracht', 'gebrachten', 'gebrachtet'],
+      answer: 0
     }
   ]
 };
