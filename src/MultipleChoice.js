@@ -1075,6 +1075,12 @@ const questions = {
       options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
       answer: 5
     }
+  ],
+  A2: [
+    // A2 seviyesi soruları
+  ],
+  B1: [
+    // B1 seviyesi soruları
   ]
 };
 
@@ -1113,11 +1119,14 @@ export default function MultipleChoice() {
       
       <Tabs value={selectedLevel} onChange={handleLevelChange} sx={{ mb: 3 }}>
         <Tab label="A1" value="A1" />
+        <Tab label="A2" value="A2" />
         <Tab label="B1" value="B1" />
       </Tabs>
 
       <Typography variant="h6" sx={{ mb: 2, color: '#E65100' }}>
-        {selectedLevel === 'A1' ? 'A1 Seviyesi Alıştırmalar' : 'B1 Seviyesi Alıştırmalar'}
+        {selectedLevel === 'A1' ? 'A1 Seviyesi Alıştırmalar' : 
+         selectedLevel === 'A2' ? 'A2 Seviyesi Alıştırmalar' : 
+         'B1 Seviyesi Alıştırmalar'}
       </Typography>
 
       {currentQuestions.map((q, idx) => (
