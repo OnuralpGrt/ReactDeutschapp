@@ -1044,6 +1044,36 @@ const questions = {
       question: 'Du hast den Ball _______________.',
       options: ['gebracht', 'gebrachten', 'gebrachtet'],
       answer: 0
+    },
+    {
+      question: 'In der Mail an die Touristeninformation: Ich suche dringend eine günstige Unterkunft für meine Reise nach München. Können Sie ______ bitte kurz über die durchschnittlichen Zimmerpreise informieren?',
+      options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
+      answer: 0
+    },
+    {
+      question: 'Im Restaurant: Entschuldigen Sie bitte! Meine Freundin und ich möchten gern etwas zum Essen bestellen. Können Sie ______ bitte eine Speisekarte bringen?',
+      options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
+      answer: 1
+    },
+    {
+      question: 'Im Café: Wie schmeckt ______ der Cappuccino, Liebling? Hättest du noch etwas Sahne?',
+      options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
+      answer: 2
+    },
+    {
+      question: 'Im Krankenhaus: Legen Sie sich bitte hin. Wo tut es ______ genau weh? Hier am Fuß oder am Knie?',
+      options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
+      answer: 3
+    },
+    {
+      question: 'Anruf bei der Firma: Guten Tag, Herr Meier! Frau Schilling hat gerade eine Besprechung. Schreiben Sie ______ lieber eine Mail und schicken Sie auch den digitalen Katalog mit. Die Mailadresse von Frau Schilling ist schilling@firma.de. Ich buchstabiere s-c-h …………………….',
+      options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
+      answer: 4
+    },
+    {
+      question: 'An der Hotelrezeption: Entschuldigen Sie! Ich kann meinen Zimmerschlüssel nicht finden. Ich glaube, ich habe ______ im Zimmer vergessen. Können ______ mir bitte einen neuen Schlüssel geben?',
+      options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
+      answer: 5
     }
   ]
 };
