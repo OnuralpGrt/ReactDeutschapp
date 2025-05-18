@@ -212,15 +212,159 @@ const exercises = {
         { answer: "an" },
         { answer: "bei" }
       ]
+    },
+    {
+      id: 10,
+      title: "Übung 10: Personalpronomen – Lücken ergänzen",
+      instruction: "Ergänzen Sie die fehlenden Personalpronomen im Akkusativ oder Dativ. Hinweis: Achten Sie darauf, ob das Personalpronomen im Akkusativ oder Dativ verwendet werden muss.",
+      type: "fill_in_the_blanks",
+      text: `In der Mail an die Touristeninformation: Ich suche dringend eine günstige Unterkunft für meine Reise nach München. Können Sie ______ bitte kurz über die durchschnittlichen Zimmerpreise informieren?\n\nIm Restaurant: Entschuldigen Sie bitte! Meine Freundin und ich möchten gern etwas zum Essen bestellen. Können Sie ______ bitte eine Speisekarte bringen?\n\nIm Café: Wie schmeckt ______ der Cappuccino, Liebling? Hättest du noch etwas Sahne?\n\nIm Krankenhaus: Legen Sie sich bitte hin. Wo tut es ______ genau weh? Hier am Fuß oder am Knie?\n\nAnruf bei der Firma: Guten Tag, Herr Meier! Frau Schilling hat gerade eine Besprechung. Schreiben Sie ______ lieber eine Mail und schicken Sie auch den digitalen Katalog mit. Die Mailadresse von Frau Schilling ist schilling@firma.de. Ich buchstabiere s-c-h …………………….\n\nAn der Hotelrezeption: Entschuldigen Sie! Ich kann meinen Zimmerschlüssel nicht finden. Ich glaube, ich habe ______ im Zimmer vergessen. Können ______ mir bitte einen neuen Schlüssel geben?`,
+      blanks: [
+        { answer: "mich" },
+        { answer: "uns" },
+        { answer: "dir" },
+        { answer: "ihnen" },
+        { answer: "Ihnen" },
+        { answer: "ihn" },
+        { answer: "Sie" }
+      ]
+    },
+    {
+      id: 11,
+      title: "Übung 11: Welch_ und dies_ – Lücken ergänzen",
+      instruction: "Lesen Sie den folgenden Dialog. Beachten Sie bitte den Inhalt. Ergänzen Sie dann die Lücken.\n\nWelch_ und dies_. Diese Wörter haben immer Endungen. Man muss sie deklinieren. Hier folgt eine kleine Übung. Sie zeigt, wie man den Demonstrativartikel 'dies_' und das Fragewort 'welch_' im Nominativ, Akkusativ und Dativ deklinieren muss. Viel Spaß bei der Arbeit!",
+      type: "fill_in_the_blanks",
+      text: `IN DER BIBLIOTHEK. Wie kann ich diese Aufgabe lösen?\n\n• Du weißt doch, ich besuche gerade einen Deutschkurs. Ich muss heute für die Prüfung lernen. Kannst du mir bitte helfen?\no Ja klar. Wo hast du denn Probleme? Was findest du schwer?\n• Ich kann mir die Vokabeln nicht merken. Ohne Vokabeln kann ich den Text nicht verstehen.\no Es gibt hier aber viele Bücher. _________(1) Buch gehört dir?\n•  _________(2) Buch ist unser Lehrwerk. Es gehört mir.\no  Themen habt ihr im Unterricht bearbeitet?\n• Wir haben schon _________ (3) Kapitel hinter uns. Das Kapitel 10 haben wir gestern beendet.\no Das ist aber eine Menge.\n•  _________ (4) Übung ist meine Hausaufgabe. Ich muss ______ (5)Text lesen und ________(6) Fragen beantworten.\no Bringst du mir bitte den Markierstift da vom Tisch?\n•  _______(7) denn? _______ (8) hier?\no Ja, genau. Du musst zuerst ________ (9) Aufgabe gut durchlesen und verstehen. Sie ist eine Zuordnungsaufgabe. ________(10) Kurztexte sind Kleinanzeigen. Wir müssen sie mit ________ (11) Situationen oder Personen verbinden. Das heißt, wir müssen für ________(12) Personen passende Anzeigen suchen. Lies doch! In der Aufgabe steht: _______(13) Anzeige passt zu ________(14) Person am besten?\n• In ________ (15) Aufgabe gibt es viele neue Wörter für mich. Ich verstehe gar nichts.\no Nur mit Geduld! ______(16) Wörter sind dir schon bekannt? ________ (17) Textstellen verstehst du? Du kannst _________(18) Sätze markieren oder unterstreichen. Konzentriere dich zuerst nur auf _______(19) Wörter. _______(20) Information findest du besonders wichtig?\n•  _______ (21) hier.\no Du hast Recht. _________(22) Information gibt uns Schlüsselwörter. Nun kannst du _______(23) Aufgabe lösen. ______(24) Antwort ist richtig?\n• Ich glaube, ________(25) hier.\no Ok, dann trage deine Lösungen in ______(26) Antwortbogen ein.\n• Meinst du ______(27) Tabelle hier?\no Genau, das ist der Antwortbogen.\n• Prima! Gut gemacht!`,
+      blanks: [
+        { answer: "Welches" },
+        { answer: "Dieses" },
+        { answer: "dieses" },
+        { answer: "Diese" },
+        { answer: "Diesen" },
+        { answer: "Diese" },
+        { answer: "Welchen" },
+        { answer: "Diesen" },
+        { answer: "Diese" },
+        { answer: "Diese" },
+        { answer: "Diesen" },
+        { answer: "Diese" },
+        { answer: "Welche" },
+        { answer: "Welchen" },
+        { answer: "Dieser" },
+        { answer: "Welche" },
+        { answer: "Welche" },
+        { answer: "Diese" },
+        { answer: "Diese" },
+        { answer: "Welche" },
+        { answer: "Diese" },
+        { answer: "Diese" },
+        { answer: "Diese" },
+        { answer: "Welche" },
+        { answer: "Diese" },
+        { answer: "Diesen" },
+        { answer: "Diese" }
+      ]
+    },
+    {
+      id: 12,
+      title: "Übung 12: Pronomen im Satz",
+      instruction: "Ergänzen Sie bitte die Lücken mit den passenden Pronomen.",
+      type: "fill_in_the_blanks",
+      text: `1. Da ist mein Füller. Ich suche -1- seit gestern.\n2. Die Bücher gehören meiner Tochter. Sie soll -2- in die Schule mitnehmen.\n3. Hast du meine E-Mail noch nicht gelesen? Ich habe -3- dir vor zwei Tagen zugeschickt.\n4. Die Konferenz beginnt in einer Stunde. Du solltest -4- nicht verpassen.\n5. Wann war dein Termin beim Zahnarzt? Willst du -5- nicht aufs Wochenende verschieben?\n6. Ich muss zum Supermarkt fahren. Könntest du mir dein Fahrrad leihen? Ich bringe -6- dir in anderthalb Stunden wieder zurück. Versprochen!\n7. Interessiert du dich auch für Muscheln? Du kannst -7- einfach am Ufer finden und sammeln. Ich bastle Schmuckstücke damit für meine Wohnung. Das ist mein Hobby.\n8. Du solltest dein Zimmer aufräumen. Nimm zuerst die Kleider vom Bett weg. Dann kannst du -8- wieder an die Kleiderbügel aufhängen.\n9. Dein T-Shirt hat eine tolle Farbe. -9- steht dir echt gut.\n10. Der Zitronenkuchen schmeckt lecker. Hast du -10- selbst gebacken?\n11. Das ist ein tolles Geschenk. Vielen Dank dafür. Ich habe -11- mir so lange gewünscht.\n12. Jeder hat Träume für die Zukunft. Man braucht meistens nur Mut und Geduld, um -12- zu verwirklichen.\n13. Wo ist die Scheere? -13- musste in der Schublade liegen. Da ist -14- aber jetzt nicht.\n14. Papa, ich muss diesen Textabschnitt zusammenfassen. Kannst du -15- mir bitte vorlesen?\n15. Die Blumen sind alle so trocken. Wir müssen -16- begießen.`,
+      blanks: [
+        { answer: "ihn" },
+        { answer: "sie" },
+        { answer: "sie" },
+        { answer: "sie" },
+        { answer: "ihn" },
+        { answer: "es" },
+        { answer: "sie" },
+        { answer: "sie" },
+        { answer: "Es" },
+        { answer: "ihn" },
+        { answer: "es" },
+        { answer: "sie" },
+        { answer: "sie" },
+        { answer: "sie" },
+        { answer: "ihn" },
+        { answer: "sie" }
+      ]
+    },
+    {
+      id: 13,
+      title: "Übung 13: Konjugation im Präsens",
+      instruction: "Ergänzen Sie die Verben.",
+      type: "fill_in_the_blanks",
+      text: `studieren\nMaria __________ in Istanbul.\nEva und Jonas _________ in Istanbul.\nEva ___________ mit Jonas zusammen in Istanbul.\n\nreisen\nAhmet ________ nach Amerika.\nUmut und Selin _________ nach Österreich.\nEmir _______ mit Yağmur zusammen in die Schweiz.\n\narbeiten\nIch __________ im Büro.\nAylin ___________ an der Universität.\nMara und Judith ________ an der Universität.\nThomas __________ mit Leyla zusammen in einer großen Firma.`,
+      blanks: [
+        { answer: "studiert" },
+        { answer: "studieren" },
+        { answer: "studiert" },
+        { answer: "reist" },
+        { answer: "reisen" },
+        { answer: "reist" },
+        { answer: "arbeite" },
+        { answer: "arbeitet" },
+        { answer: "arbeiten" },
+        { answer: "arbeitet" }
+      ]
+    },
+    {
+      id: 14,
+      title: "Übung 14: Fragewörter: wo, wohin, woher",
+      instruction: "Ergänzen Sie das Fragewort: wo, wohin oder woher.",
+      type: "fill_in_the_blanks",
+      text: `______ kommst du? Aus der Schweiz.\n______ lernst du Deutsch? Zu Hause.\n______ gehst du nach der Arbeit? Nach Hause.\n______ kommt Demir? Aus Izmir.\n______ fahren Mara und Eva am Wochenende? Nach Paris.\n______ spielt Deniz Gitarre? Im Garten.\n______ kocht die Mutter das Abendessen? In der Küche\n______ kommen Hänsel und Gretel? Aus dem Wald.\n______ kommen deine Eltern? Aus den Niederlanden.\n______ fährst du mit der U-Bahn? Nach Kadıköy.`,
+      blanks: [
+        { answer: "woher" },
+        { answer: "wo" },
+        { answer: "wohin" },
+        { answer: "woher" },
+        { answer: "wohin" },
+        { answer: "wo" },
+        { answer: "wo" },
+        { answer: "woher" },
+        { answer: "woher" },
+        { answer: "wohin" }
+      ]
+    },
+    {
+      id: 10,
+      title: "Übung 10: Verben mit Präpositionen (B1/B2)",
+      instruction: "Setzen Sie die richtigen Präpositionen in die Lücken ein.",
+      type: "fill_in_the_blanks",
+      text: `Ich interessiere mich __________ Geschichte.\nEr träumt __________ einer Reise nach Japan.\nWir warten __________ die Antwort.\nSie erzählt ihren Freunden __________  ihrem neuen Job.\nIch denke __________ das Problem nach.\nEr ist zufrieden __________ seinem neuen Auto.\nSie beschwert sich __________ den Lärm in der Stadt.\nWir freuen uns __________ das Konzert am Samstag.\nDu solltest dich __________ deine Gesundheit kümmern.\nIch lade dich __________ meiner Geburtstagsfeier ein.\nEr beteiligt sich __________ dem Projekt.\nSie träumt __________ einer besseren Zukunft.\nWir sprechen __________ unsere Pläne für den Urlaub.\nIch konzentriere mich __________ meine Arbeit.\nSie entschuldigt sich __________ ihre Verspätung.\nEr wartet __________ den Zug am Bahnhof.\nHerr Weber bedankt sich __________ ihre Unterstützung.\nSie denkt __________ ihre Familie.\nDu musst dich __________ die Prüfung vorbereiten.\nEr beschäftigt sich __________ den neuen Technologien.`,
+      blanks: [
+        { answer: "für" },
+        { answer: "von" },
+        { answer: "auf" },
+        { answer: "von" },
+        { answer: "über" },
+        { answer: "mit" },
+        { answer: "über" },
+        { answer: "auf" },
+        { answer: "um" },
+        { answer: "zu" },
+        { answer: "an" },
+        { answer: "von" },
+        { answer: "über" },
+        { answer: "auf" },
+        { answer: "für" },
+        { answer: "auf" },
+        { answer: "für" },
+        { answer: "an" },
+        { answer: "auf" },
+        { answer: "mit" }
+      ]
     }
   ],
   A2: [
     {
       id: 1,
-      title: "Partizip II – Lückentext-Übung",
+      title: "Übung 8: Partizip II – Lückentext-Übung",
       instruction: "Ergänze das richtige Partizip II. Die Verben stehen in der Klammer.",
       type: "fill_in_the_blanks",
-      text: `1. Ich habe den Film _______________. (sehen)\n\n2. Wir haben das Haus _______________. (verlassen)\n\n3. Sie hat ihren Freund _______________. (besuchen)\n\n4. Du hast deine Hausaufgaben _______________. (vergessen)\n\n5. Er hat viel _______________. (lesen)\n\n6. Ihr habt den Test _______________. (bestehen)\n\n7. Ich habe ein neues Handy _______________. (bekommen)\n\n8. Wir haben im Garten _______________. (gearbeitet)\n\n9. Sie hat laut _______________. (lachen)\n\n10. Du hast einen Kuchen _______________. (backen)\n\n11. Ich habe den Brief _______________. (abschicken)\n\n12. Wir haben alles gut _______________. (organisieren)\n\n13. Sie hat einen Pullover _______________. (stricken)\n\n14. Er hat sein Fahrrad _______________. (reparieren)\n\n15. Du hast dein Zimmer _______________. (aufräumen)\n\n16. Ihr habt lange _______________. (diskutieren)\n\n17. Ich habe dir die Wahrheit _______________. (sagen)\n\n18. Wir haben zusammen _______________. (kochen)\n\n19. Sie hat die Lampe _______________. (anmachen)\n\n20. Du hast das Paket _______________. (abholen)`,
+      text: `1. Ich habe den Film __________. (sehen)\n2. Wir haben das Haus __________. (verlassen)\n3. Sie hat ihren Freund __________. (besuchen)\n4. Du hast deine Hausaufgaben __________. (vergessen)\n5. Er hat viel __________. (lesen)\n6. Ihr habt den Test __________. (bestehen)\n7. Ich habe ein neues Handy __________. (bekommen)\n8. Wir haben im Garten __________. (gearbeitet)\n9. Sie hat laut __________. (lachen)\n10. Du hast einen Kuchen __________. (backen)\n11. Ich habe den Brief __________. (abschicken)\n12. Wir haben alles gut __________. (organisieren)\n13. Sie hat einen Pullover __________. (stricken)\n14. Er hat sein Fahrrad __________. (reparieren)\n15. Du hast dein Zimmer __________. (aufräumen)\n16. Ihr habt lange __________. (diskutieren)\n17. Ich habe dir die Wahrheit __________. (sagen)\n18. Wir haben zusammen __________. (kochen)\n19. Sie hat die Lampe __________. (anmachen)\n20. Du hast das Paket __________. (abholen)`,
       blanks: [
         { answer: "gesehen" },
         { answer: "verlassen" },
@@ -260,8 +404,6 @@ const exercises = {
         { answer: "der" },
         { answer: "in dem" },
         { answer: "dessen" },
-        { answer: "der" },
-        { answer: "dessen" },
         { answer: "deren" },
         { answer: "dessen" }
       ]
@@ -288,14 +430,14 @@ const exercises = {
       title: "Adjektivendungen",
       instruction: "Ergänzen Sie die Adjektivendungen für die Adjektivphrasen.",
       type: "fill_in_the_blanks",
-      text: `Ich suche ein ruhig_______________ Zimmer.\n\nEr nimmt seinen schwer_______________ Koffer mit.\n\nDas neu_______________ Auto steht auf dem Parkplatz.\n\nIch brauche ein frisch_______________ Brot und gut_______________ Käse.\n\nIn der Arbeit trägt mein Freund lieber einen dunklen Anzug und ein weiß_______________ Hemd.\n\nUnsere höflich_______________ Nachbarin lädt uns zum Abendessen ein.\n\nDer krank_______________ Junge möchte nichts essen. Er hat keinen Appetit.\n\nDer faul_______________ Schüler hat wieder keine Hausaufgaben gemacht.\n\nDie neu_______________ Nachbarn laden uns auf eine Party ein.\n\nDie grün_______________ Schuhe sind sehr teuer.`,
+      text: `Ich suche ein ruhig___ Zimmer.\nEr nimmt seinen schwer___ Koffer mit.\nDas neu___ Auto steht auf dem Parkplatz.\nIch brauche ein frisch___ Brot und gut___ Käse.\nIn der Arbeit trägt mein Freund lieber einen dunkel___ Anzug und ein weiß___ Hemd.\nUnsere höflich___ Nachbarin lädt uns zum Abendessen ein.\nDer krank___ Junge möchte nichts essen. Er hat keinen Appetit.\nDer faul___ Schüler hat wieder keine Hausaufgaben gemacht.\nDie neu___ Nachbarn laden uns auf eine Party ein.\nDie grün___ Schuhe sind sehr teuer.`,
       blanks: [
         { answer: "es" },
         { answer: "en" },
         { answer: "e" },
         { answer: "es" },
-        { answer: "es" },
-        { answer: "e" },
+        { answer: "en" },
+        { answer: "en" },
         { answer: "e" },
         { answer: "e" },
         { answer: "en" },
@@ -307,7 +449,7 @@ const exercises = {
       title: "Demonstrativartikel-Endungen",
       instruction: "Ergänzen Sie die Endungen der Demonstrativartikel.",
       type: "fill_in_the_blanks",
-      text: `Dies_______________ Professor macht immer schwere Prüfungen.\n\nDies_______________ Bücher sind sehr teuer.\n\nDies_______________ Film habe ich schon gesehen.\n\nDies_______________ Mann kenne ich nicht.\n\nDies_______________ Gericht mag ich nicht.\n\nDies_______________ Kinder spielen kein Fußball.\n\nIch fahre jeden Tag mit dies_______________ Auto zur Uni.\n\nWir machen mit dies_______________ Lehrbuch Deutschunterricht.\n\nDies_______________ Prüfung war nicht einfach.\n\nMit dies_______________ Aufgabe habe ich verstanden, wie man Adjektive dekliniert.\n\nSchau mal! Hier ist eine sehr teure Krawatte. Ein Mann mit dies_______________ Krawatte ist immer elegant auf Events.\n\nMit dies_______________ Schnellzug kommst du in einer halben Stunde zu Hause an.`,
+      text: `Dies__ Proffessor macht immer schwere Prüfungen.\nDies__ Bücher sind sehr teuer.\nDies__ Film habe ich schon gesehen.\nDies__ Mann kenne ich nicht.\nDies__ Gericht mag ich nicht.\nDies__ Kinder spielen kein Fußball.\nIch fahre jeden Tag mit dies__ Auto zur Uni.\nWir machen mit dies__ Lehrbuch Deutschunterricht.\nDies__ Prüfung war nicht einfach.\nMit dies__ Aufgabe habe ich verstanden, wie man Adjektive dekliniert.\nSchau mal! Hier ist eine sehr teure Krawatte. Ein Mann mit dies__ Krawatte ist immer elegant auf Events.\nMit dies__ Schnellzug kommst du in einer halben Stunde zu Hause an.`,
       blanks: [
         { answer: "er" },
         { answer: "e" },
@@ -328,7 +470,7 @@ const exercises = {
       title: "Interrogativartikel-Endungen",
       instruction: "Ergänzen Sie die Endungen der Interrogativartikel.",
       type: "fill_in_the_blanks",
-      text: `Welch_______________ Buch ist spannend?\n\nWelch_______________ Land hat keine Millionenstadt?\n\nWelch_______________ Stadt ist am schönsten?\n\nWelch_______________ Flughafen findest du schöner?\n\nMit welch_______________ Kleidung gehst du am liebsten zur Uni?\n\nWelch_______________ Länder haben Könige und Königinnen?\n\nWelch_______________ Hose findest du hässlich?\n\nAuf welch_______________ Party gehst du morgen?\n\nMit welch_______________ Studentin lernst du am besten?\n\nIn welch_______________ Jahr sind wir jetzt?\n\nAn welch_______________ Tag triffst du deine Freunde?\n\nIn welch_______________ Monat ist das Wetter sehr heiß?\n\nMit welch_______________ Zug fährst du zur Uni?\n\nAn welch_______________ Haltestelle musst du aussteigen?\n\nWelch_______________ Film möchtest du nach dem Unterricht sehen?\n\nWelch_______________ Internetseite findest du nützlich?\n\nBei welch_______________ Freund fühlst du dich wohl?\n\nIn welch_______________ Stadt willst du gern reisen?\n\nIn welch_______________ Stadt gibt es kein Meer?\n\nWelch_______________ Schuhe findest du am besten?\n\nWelch_______________ Kleidung trägst du am seltensten?`,
+      text: `Welch__ Buch ist spannend?\nWelch__ Land hat keine Millionenstadt?\nWelch__ Stadt ist am schönsten?\nWelch__ Flughafen findest du schöner?\nMit welch__ Kleidung gehst du am liebsten zur Uni?\nWelch__ Länder haben Könige und Königinnen?\nWelch__ Hose findest du hässlich?\nAuf welch__ Party gehst du morgen?\nMit welch__ Studentin lernst du am besten?\nIn welch__ Jahr sind wir jetzt?\nAn welch__ Tag triffst du deine Freunde?\nIn welch__ Monat ist das Wetter sehr heiß?\nMit welch__ Zug fährst du zur Uni?\nAn welch__ Haltestelle musst du aussteigen?\nWelch__ Film möchtest du nach dem Unterricht sehen?\nWelch__ Internetseite findest du nützlich?\nBei welch__ Freund fühlst du dich wohl?\nIn welch__ Stadt willst du gern reisen?\nIn welch__ Stadt gibt es kein Meer?\nWelch__ Schuhe findest du am besten?\nWelch__ Kleidung trägst du am seltensten?`,
       blanks: [
         { answer: "es" },
         { answer: "es" },
@@ -390,15 +532,101 @@ const exercises = {
         { answer: "bin" },
         { answer: "hast" }
       ]
-    }
-  ],
-  B1: [
+    },
     {
-      id: 1,
-      title: "Konjunktiv II",
-      instruction: "Ergänzen Sie die Sätze im Konjunktiv II.",
+      id: 8,
+      title: "Übung 4: Partizip II – Lückentext-Übung (B1)",
+      instruction: "Ergänze das richtige Partizip II. Die Verben stehen in der Klammer.",
       type: "fill_in_the_blanks",
-      text: `1. Wenn ich reich wäre, _______________ ich ein großes Haus kaufen.\n\n2. Wenn du Zeit hättest, _______________ du mit mir ins Kino kommen.\n\n3. Wenn er Deutsch könnte, _______________ er in Deutschland arbeiten.\n\n4. Wenn sie mehr Geld hätte, _______________ sie eine Weltreise machen.\n\n5. Wenn wir früher aufgestanden wären, _______________ wir den Bus nicht verpasst haben.\n\n6. Wenn ihr fleißiger wäret, _______________ ihr bessere Noten bekommen.\n\n7. Wenn sie mehr üben würden, _______________ sie die Prüfung bestehen.\n\n8. Wenn ich mehr Zeit hätte, _______________ ich mehr Sport treiben.\n\n9. Wenn du mir geholfen hättest, _______________ ich schneller fertig geworden sein.\n\n10. Wenn er die Wahrheit gesagt hätte, _______________ wir ihm geglaubt haben.`,
+      text: `1. Ich habe lange über das Problem __________. (nachdenken)\n2. Wir haben das Projekt erfolgreich __________. (abschließen)\n3. Sie hat den Termin __________. (verschieben)\n4. Du hast die Präsentation gut __________. (vorbereiten)\n5. Er hat sich sehr über das Geschenk __________. (freuen)\n6. Ihr habt den Fehler rechtzeitig __________. (bemerken)\n7. Ich habe meine Meinung __________. (ändern)\n8. Wir haben die Wohnung neu __________. (einrichten)\n9. Sie hat den Vertrag __________. (unterschreiben)\n10. Du hast ihm die Wahrheit __________. (erzählen)\n11. Ich habe meine Deutschkenntnisse stark __________. (verbessern)\n12. Wir haben viele interessante Orte __________. (besichtigen)\n13. Sie hat sich für den Kurs __________. (anmelden)\n14. Er hat sich über die Regeln __________. (informieren)\n15. Du hast deine Meinung klar __________. (äußern)\n16. Ihr habt euch im Gespräch __________. (verstehen)\n17. Ich habe den Fehler __________. (zugeben)\n18. Wir haben uns freundlich __________. (verabschieden)\n19. Sie hat sich neue Schuhe __________. (kaufen)\n20. Du hast dich für die Stelle __________. (bewerben)`,
+      blanks: [
+        { answer: "nachgedacht" },
+        { answer: "abgeschlossen" },
+        { answer: "verschoben" },
+        { answer: "vorbereitet" },
+        { answer: "gefreut" },
+        { answer: "bemerkt" },
+        { answer: "geändert" },
+        { answer: "eingerichtet" },
+        { answer: "unterschrieben" },
+        { answer: "erzählt" },
+        { answer: "verbessert" },
+        { answer: "besichtigt" },
+        { answer: "angemeldet" },
+        { answer: "informiert" },
+        { answer: "geäußert" },
+        { answer: "verstanden" },
+        { answer: "zugegeben" },
+        { answer: "verabschiedet" },
+        { answer: "gekauft" },
+        { answer: "beworben" }
+      ]
+    },
+    {
+      id: 9,
+      title: "Übung 5: Doppelkonnektoren – Lückentext-Übung (B1)",
+      instruction: "Lesen Sie den Text und füllen Sie die Lücken mit den passenden Doppelkonnektoren: (sowohl ... als auch, entweder ... oder, weder ... noch, nicht nur ... sondern auch, zwar ... aber)",
+      type: "fill_in_the_blanks",
+      text: `Max hat gerade sein Studium begonnen und erzählt von seinen Erfahrungen:\n „An der Universität gibt es ___________(1) viele Vorlesungen ___________ (2) Seminare, die ich besuchen muss. Mein Stundenplan ist sehr voll, deshalb bleibt mir ___________(3) Zeit für Sport ___________(4) für Hobbys. Ich habe _____________ (5) viele Bücher in der Bibliothek ausgeliehen, ___________ (6) auch neue Bücher für die Hausarbeiten gekauft. Jetzt muss ich mich entscheiden: ___________ (7) mache ich ein freiwilliges Praktikum in den Ferien, ___________ (8) ich arbeite an meinem Forschungsprojekt. \"Es ist ___________ (9) anstrengend, ___________(10) auch sehr spannend.“`,
+      blanks: [
+        { answer: "sowohl" },
+        { answer: "als auch" },
+        { answer: "weder" },
+        { answer: "noch" },
+        { answer: "nicht nur" },
+        { answer: "sondern" },
+        { answer: "entweder" },
+        { answer: "oder" },
+        { answer: "zwar" },
+        { answer: "aber" }
+      ]
+    },
+    {
+      id: 10,
+      title: "Übung 9: Adjektivendungen",
+      instruction: "Ergänzen Sie die Adjektivendungen für die Adjektivphrasen.",
+      type: "fill_in_the_blanks",
+      text: `Ich suche ein ruhig___ Zimmer.\nEr nimmt seinen schwer___ Koffer mit.\nDas neu___ Auto steht auf dem Parkplatz.\nIch brauche ein frisch___ Brot und gut___ Käse.\nIn der Arbeit trägt mein Freund lieber einen dunkel___ Anzug und ein weiß___ Hemd.\nUnsere höflich___ Nachbarin lädt uns zum Abendessen ein.\nDer krank___ Junge möchte nichts essen. Er hat keinen Appetit.\nDer faul___ Schüler hat wieder keine Hausaufgaben gemacht.\nDie neu___ Nachbarn laden uns auf eine Party ein.\nDie grün___ Schuhe sind sehr teuer.`,
+      blanks: [
+        { answer: "es" },
+        { answer: "en" },
+        { answer: "e" },
+        { answer: "es" },
+        { answer: "en" },
+        { answer: "en" },
+        { answer: "e" },
+        { answer: "e" },
+        { answer: "en" },
+        { answer: "en" }
+      ]
+    },
+    {
+      id: 11,
+      title: "Übung 10: Demonstrativartikel-Endungen",
+      instruction: "Ergänzen Sie die Endungen der Demonstrativartikel.",
+      type: "fill_in_the_blanks",
+      text: `Dies__ Proffessor macht immer schwere Prüfungen.\nDies__ Bücher sind sehr teuer.\nDies__ Film habe ich schon gesehen.\nDies__ Mann kenne ich nicht.\nDies__ Gericht mag ich nicht.\nDies__ Kinder spielen kein Fußball.\nIch fahre jeden Tag mit dies__ Auto zur Uni.\nWir machen mit dies__ Lehrbuch Deutschunterricht.\nDies__ Prüfung war nicht einfach.\nMit dies__ Aufgabe habe ich verstanden, wie man Adjektive dekliniert.\nSchau mal! Hier ist eine sehr teure Krawatte. Ein Mann mit dies__ Krawatte ist immer elegant auf Events.\nMit dies__ Schnellzug kommst du in einer halben Stunde zu Hause an.`,
+      blanks: [
+        { answer: "er" },
+        { answer: "e" },
+        { answer: "en" },
+        { answer: "en" },
+        { answer: "es" },
+        { answer: "e" },
+        { answer: "em" },
+        { answer: "em" },
+        { answer: "e" },
+        { answer: "er" },
+        { answer: "er" },
+        { answer: "em" }
+      ]
+    },
+    {
+      id: 12,
+      title: "Übung 11: Interrogativartikel-Endungen",
+      instruction: "Ergänzen Sie die Endungen der Interrogativartikel.",
+      type: "fill_in_the_blanks",
+      text: `Welch__ Film möchtest du nach dem Unterricht sehen?\nWelch__ Internetseite findest du nützlich?\nBei welch__ Freund fühlst du dich wohl?\nIn welch__ Stadt willst du gern reisen?\nIn welch__ Stadt gibt es kein Meer?\nWelch__ Schuhe findest du am besten?\nWelch__ Kleidung trägst du am seltensten?`,
       blanks: [
         { answer: "würde" },
         { answer: "würdest" },
