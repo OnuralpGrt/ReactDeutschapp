@@ -1308,6 +1308,179 @@ function Leseverstehen() {
         </Paper>
       )}
 
+      {exercise.type === "richtig_falsch_quiz" && (
+        <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
+          {exercise.questions.map((q, index) => (
+            <Box key={index} sx={{ mb: 3 }}>
+              <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
+                {index + 1}. {q.question}
+              </Typography>
+              <FormControl component="fieldset">
+                <RadioGroup
+                  value={answers[index] || ''}
+                  onChange={(e) => handleAnswerChange(index, e.target.value)}
+                >
+                  <FormControlLabel value="richtig" control={<Radio />} label="Richtig" />
+                  <FormControlLabel value="falsch" control={<Radio />} label="Falsch" />
+                </RadioGroup>
+              </FormControl>
+              <Button 
+                variant="text" 
+                onClick={() => toggleHint(index)}
+                sx={{ color: '#E65100' }}
+              >
+                {showHints[index] ? 'İpucunu Gizle' : 'İpucu Göster'}
+              </Button>
+              {showHints[index] && (
+                <Alert severity="info" sx={{ mt: 1 }}>
+                  {q.hint}
+                </Alert>
+              )}
+              {showResults && (
+                <Alert 
+                  severity={answers[index] === q.answer ? 'success' : 'error'}
+                  sx={{ mt: 1 }}
+                >
+                  {answers[index] === q.answer
+                    ? 'Doğru!'
+                    : `Yanlış. Doğru cevap: ${q.answer}`}
+                </Alert>
+              )}
+            </Box>
+          ))}
+        </Paper>
+      )}
+
+      {exercise.type === "multiple_choice_quiz" && (
+        <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
+          {exercise.questions.map((q, index) => (
+            <Box key={index} sx={{ mb: 3 }}>
+              <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
+                {index + 1}. {q.question}
+              </Typography>
+              <FormControl component="fieldset">
+                <RadioGroup
+                  value={answers[index] || ''}
+                  onChange={(e) => handleAnswerChange(index, e.target.value)}
+                >
+                  {q.options.map((option, optionIndex) => (
+                    <FormControlLabel
+                      key={optionIndex}
+                      value={optionIndex.toString()}
+                      control={<Radio />}
+                      label={option}
+                    />
+                  ))}
+                </RadioGroup>
+              </FormControl>
+              <Button 
+                variant="text" 
+                onClick={() => toggleHint(index)}
+                sx={{ color: '#E65100' }}
+              >
+                {showHints[index] ? 'İpucunu Gizle' : 'İpucu Göster'}
+              </Button>
+              {showHints[index] && (
+                <Alert severity="info" sx={{ mt: 1 }}>
+                  {q.hint}
+                </Alert>
+              )}
+              {showResults && (
+                <Alert 
+                  severity={answers[index] === q.answer.toString() ? 'success' : 'error'}
+                  sx={{ mt: 1 }}
+                >
+                  {answers[index] === q.answer.toString()
+                    ? 'Doğru!'
+                    : `Yanlış. Doğru cevap: ${q.options[q.answer]}`}
+                </Alert>
+              )}
+            </Box>
+          ))}
+        </Paper>
+      )}
+
+      {exercise.tasks && (
+        <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
+          {exercise.tasks.map((task, taskIndex) => (
+            <Box key={taskIndex} sx={{ mb: 4 }}>
+              <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
+                {task.title}
+              </Typography>
+              {task.type === "multiple_choice" && (
+                <>
+                  {task.questions.map((q, index) => (
+                    <Box key={index} sx={{ mb: 3 }}>
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            checked={answers[`${taskIndex}-${index}`] || false}
+                            onChange={(e) => handleAnswerChange(`${taskIndex}-${index}`, e.target.checked)}
+                          />
+                        }
+                        label={q.question}
+                      />
+                      {showResults && (
+                        <Alert 
+                          severity={answers[`${taskIndex}-${index}`] === q.answer ? 'success' : 'error'}
+                          sx={{ mt: 1 }}
+                        >
+                          {answers[`${taskIndex}-${index}`] === q.answer
+                            ? 'Doğru!'
+                            : `Yanlış. Bu ifade ${q.answer ? 'doğru' : 'yanlış'}.`}
+                        </Alert>
+                      )}
+                    </Box>
+                  ))}
+                </>
+              )}
+              {task.type === "open_ended" && (
+                <>
+                  {task.questions.map((q, index) => (
+                    <Box key={index} sx={{ mb: 3 }}>
+                      <Typography variant="subtitle1" gutterBottom>
+                        {index + 1}. {q.question}
+                      </Typography>
+                      <TextField
+                        fullWidth
+                        multiline
+                        rows={2}
+                        value={answers[`${taskIndex}-${index}`] || ''}
+                        onChange={(e) => handleAnswerChange(`${taskIndex}-${index}`, e.target.value)}
+                        variant="outlined"
+                        sx={{ mb: 1 }}
+                      />
+                      <Button 
+                        variant="text" 
+                        onClick={() => toggleHint(`${taskIndex}-${index}`)}
+                        sx={{ color: '#E65100' }}
+                      >
+                        {showHints[`${taskIndex}-${index}`] ? 'İpucunu Gizle' : 'İpucu Göster'}
+                      </Button>
+                      {showHints[`${taskIndex}-${index}`] && (
+                        <Alert severity="info" sx={{ mt: 1 }}>
+                          {q.hint}
+                        </Alert>
+                      )}
+                      {showResults && (
+                        <Alert 
+                          severity={answers[`${taskIndex}-${index}`]?.toLowerCase().trim() === q.answer.toLowerCase().trim() ? 'success' : 'error'}
+                          sx={{ mt: 1 }}
+                        >
+                          {answers[`${taskIndex}-${index}`]?.toLowerCase().trim() === q.answer.toLowerCase().trim()
+                            ? 'Doğru!'
+                            : `Yanlış. Doğru cevap: ${q.answer}`}
+                        </Alert>
+                      )}
+                    </Box>
+                  ))}
+                </>
+              )}
+            </Box>
+          ))}
+        </Paper>
+      )}
+
       <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
         <Button 
           variant="contained" 
