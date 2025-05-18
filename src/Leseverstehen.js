@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Typography, Paper, TextField, Button, Box, Alert, FormControlLabel, Radio, RadioGroup, FormControl, Checkbox } from '@mui/material';
 
 const exercises = {
@@ -1149,6 +1149,12 @@ function Leseverstehen() {
   const [showResults, setShowResults] = useState(false);
   const [showHints, setShowHints] = useState({});
 
+  useEffect(() => {
+    console.log('Leseverstehen component mounted');
+    console.log('Current level:', currentLevel);
+    console.log('Current exercise:', currentExercise);
+  }, [currentLevel, currentExercise]);
+
   const handleAnswerChange = (questionIndex, value) => {
     setAnswers(prev => ({
       ...prev,
@@ -1168,6 +1174,7 @@ function Leseverstehen() {
   };
 
   const handleLevelChange = (level) => {
+    console.log('Changing level to:', level);
     setCurrentLevel(level);
     setCurrentExercise(0);
     setAnswers({});
@@ -1176,6 +1183,7 @@ function Leseverstehen() {
   };
 
   const handleExerciseChange = (exerciseIndex) => {
+    console.log('Changing exercise to:', exerciseIndex);
     setCurrentExercise(exerciseIndex);
     setAnswers({});
     setShowResults(false);
@@ -1187,6 +1195,17 @@ function Leseverstehen() {
   };
 
   const exercise = exercises[currentLevel][currentExercise];
+
+  if (!exercise) {
+    console.log('No exercise found for level:', currentLevel, 'exercise:', currentExercise);
+    return (
+      <Container maxWidth="md" sx={{ py: 4 }}>
+        <Typography variant="h4" component="h1" sx={{ color: '#E65100' }}>
+          Alıştırma bulunamadı
+        </Typography>
+      </Container>
+    );
+  }
 
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
@@ -1208,7 +1227,7 @@ function Leseverstehen() {
         <Typography variant="h4" component="h1" sx={{ color: '#E65100' }}>
           Leseverstehen
         </Typography>
-        <Box sx={{ width: 100 }} /> {/* Boşluk için */}
+        <Box sx={{ width: 100 }} />
       </Box>
 
       {/* Seviye Seçimi */}

@@ -43,72 +43,70 @@ function App() {
   const [page, setPage] = useState('menu');
 
   const handlePageChange = (newPage) => {
+    console.log('Changing page to:', newPage);
     setPage(newPage);
   };
 
-  if (page === 'multiple-choice') {
-    return <MultipleChoice />;
-  }
-
-  if (page === 'satze-bilden') {
-    return <SatzeBilden />;
-  }
-
-  if (page === 'leseverstehen') {
-    return <Leseverstehen />;
-  }
-
-  return (
-    <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
-      <Typography 
-        variant="h4" 
-        component="h1" 
-        sx={{ 
-          mb: 4, 
-          fontWeight: 'bold',
-          color: '#E65100',
-          textAlign: 'center',
-          textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
-        }}
-      >
-        DeutschApp
-      </Typography>
-      <Grid container spacing={3}>
-        {menuItems.map((item, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <StyledCard
-              onClick={() => {
-                if (item.route) {
-                  handlePageChange(item.route);
-                }
+  const renderPage = () => {
+    switch (page) {
+      case 'multiple-choice':
+        return <MultipleChoice />;
+      case 'satze-bilden':
+        return <SatzeBilden />;
+      case 'leseverstehen':
+        return <Leseverstehen />;
+      default:
+        return (
+          <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
+            <Typography 
+              variant="h4" 
+              component="h1" 
+              sx={{ 
+                mb: 4, 
+                fontWeight: 'bold',
+                color: '#E65100',
+                textAlign: 'center',
+                textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
               }}
-              sx={{ cursor: item.route ? 'pointer' : 'default' }}
             >
-              <StyledCardMedia
-                component="img"
-                image={process.env.PUBLIC_URL + '/' + item.image}
-                title={item.title}
-                alt={item.title}
-              />
-              <CardContent sx={{ textAlign: 'center', padding: '12px' }}>
-                <Typography 
-                  variant="h6" 
-                  component="h2"
-                  sx={{ 
-                    color: '#E65100',
-                    fontWeight: 'medium',
-                    fontSize: '1.1rem'
-                  }}
-                >
-                  {item.title}
-                </Typography>
-              </CardContent>
-            </StyledCard>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-  );
+              DeutschApp
+            </Typography>
+            <Grid container spacing={3}>
+              {menuItems.map((item, index) => (
+                <Grid item xs={12} sm={6} md={4} key={index}>
+                  <StyledCard
+                    onClick={() => handlePageChange(item.route)}
+                    sx={{ cursor: 'pointer' }}
+                  >
+                    <StyledCardMedia
+                      component="img"
+                      image={process.env.PUBLIC_URL + '/' + item.image}
+                      title={item.title}
+                      alt={item.title}
+                    />
+                    <CardContent sx={{ textAlign: 'center', padding: '12px' }}>
+                      <Typography 
+                        variant="h6" 
+                        component="h2"
+                        sx={{ 
+                          color: '#E65100',
+                          fontWeight: 'medium',
+                          fontSize: '1.1rem'
+                        }}
+                      >
+                        {item.title}
+                      </Typography>
+                    </CardContent>
+                  </StyledCard>
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        );
+    }
+  };
+
+  return renderPage();
 }
 
 export default App; 
