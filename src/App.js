@@ -8,7 +8,6 @@ import Leseverstehen from './Leseverstehen';
 const menuItems = [
   { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: 'multiple-choice' },
   { title: 'Sätze Bilden', image: 'SatzeBilden.png', route: 'satze-bilden' },
-  { title: 'Lernen mit Musik', image: 'Lernenmıtmusık.png', route: 'lernen-mit-musik' },
   { title: 'Leseverstehen', image: 'LESEVERSTEHEN.png', route: 'leseverstehen' },
   { title: 'Wortschatz', image: 'WORTSCHATZ.png', route: 'wortschatz' },
   { title: 'Zuordnung', image: 'ZUORDNUNG-2.png', route: 'zuordnung' },
@@ -61,7 +60,7 @@ function App() {
             <Typography 
               variant="h4" 
               component="h1" 
-              sx={{ 
+              sx={{
                 mb: 4, 
                 fontWeight: 'bold',
                 color: '#E65100',
@@ -88,7 +87,7 @@ function App() {
                       <Typography 
                         variant="h6" 
                         component="h2"
-                        sx={{ 
+                        sx={{
                           color: '#E65100',
                           fontWeight: 'medium',
                           fontSize: '1.1rem'
