@@ -5,14 +5,14 @@ import MultipleChoice from './MultipleChoice';
 import SatzeBilden from './SatzeBilden';
 
 const menuItems = [
-  { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: '/multiple-choice' },
-  { title: 'Sätze Bilden', image: 'SatzeBilden.png' },
-  { title: 'Lernen mit Musik', image: 'Lernenmıtmusık.png' },
-  { title: 'Leseverstehen', image: 'LESEVERSTEHEN.png' },
-  { title: 'Wortschatz', image: 'WORTSCHATZ.png' },
-  { title: 'Zuordnung', image: 'ZUORDNUNG-2.png' },
-  { title: 'Grammatik', image: 'GRAMMER.png' },
-  { title: 'Frage & Antwort', image: 'Frage-Antwort.png' }
+  { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: 'multiple-choice' },
+  { title: 'Sätze Bilden', image: 'SatzeBilden.png', route: 'satze-bilden' },
+  { title: 'Lernen mit Musik', image: 'Lernenmıtmusık.png', route: 'lernen-mit-musik' },
+  { title: 'Leseverstehen', image: 'LESEVERSTEHEN.png', route: 'leseverstehen' },
+  { title: 'Wortschatz', image: 'WORTSCHATZ.png', route: 'wortschatz' },
+  { title: 'Zuordnung', image: 'ZUORDNUNG-2.png', route: 'zuordnung' },
+  { title: 'Grammatik', image: 'GRAMMER.png', route: 'grammatik' },
+  { title: 'Frage & Antwort', image: 'Frage-Antwort.png', route: 'frage-antwort' }
 ];
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -69,10 +69,9 @@ function App() {
           <Grid item xs={12} sm={6} md={4} key={index}>
             <StyledCard
               onClick={() => {
-                if (item.title === 'Multiple Choice') setPage('multiple-choice');
-                if (item.title === 'Sätze Bilden') setPage('satze-bilden');
+                if (item.route) setPage(item.route);
               }}
-              sx={{ cursor: (item.title === 'Multiple Choice' || item.title === 'Sätze Bilden') ? 'pointer' : 'default' }}
+              sx={{ cursor: item.route ? 'pointer' : 'default' }}
             >
               <StyledCardMedia
                 component="img"
