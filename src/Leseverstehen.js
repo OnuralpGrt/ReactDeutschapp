@@ -11,6 +11,7 @@ const exercises = {
 Meine Eltern heißen Herbert und Maria. Mein Vater ist Bankkaufmann von Beruf und ist jetzt 47 Jahre alt. Meine Mutter ist Lehrerin und ist 44. Ich habe drei Geschwister, eine Schwester und zwei Brüder. Meine Schwester heißt Sigrid und ist erst 12. Sie geht noch zur Schule. Mein kleiner Bruder ist 17. Er macht jetzt sein Abitur. Mein großer Bruder ist schon 21. Er studiert in München. 
 
 Ich habe eine Tante. Sie heißt Helga und wohnt in Bonn. Sie hat eine kleine Tochter. Das ist meine Cousine. Mein Onkel heißt Fritz. Er ist Mechaniker. Er ist auch verheiratet, aber er hat keine Kinder. Mein Großvater und meine Großmutter wohnen in Freiburg. Sie sind 66 und 62 Jahre alt.`,
+      type: "open_ended_quiz",
       questions: [
         {
           question: "Wie alt ist Martina?",
@@ -71,25 +72,26 @@ Bei Fragen bin ich telefonisch erreichbar.
 
 Viele Grüße
 Anna Müller`,
+      type: "richtig_falsch_quiz",
       questions: [
         {
           question: "Anna ist erkältet und hat Fieber.",
-          answer: "r",
+          answer: "richtig",
           hint: "Metinde Anna'nın sağlık durumunu kontrol edin."
         },
         {
           question: "Anna darf am nächsten Tag zur Arbeit gehen.",
-          answer: "f",
+          answer: "falsch",
           hint: "Anna'nın ne kadar süre dinlenmesi gerektiğine bakın."
         },
         {
           question: "Herr Meier soll der Chefin Bescheid geben.",
-          answer: "f",
+          answer: "falsch",
           hint: "Kimin kime haber verdiğini kontrol edin."
         },
         {
           question: "Anna kann man bei Fragen anrufen.",
-          answer: "r",
+          answer: "richtig",
           hint: "Anna'nın iletişim bilgilerini kontrol edin."
         }
       ]
