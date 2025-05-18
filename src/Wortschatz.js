@@ -905,11 +905,76 @@ function Wortschatz() {
     setShowResults(true);
   };
 
+  const handleLevelChange = (level) => {
+    setCurrentLevel(level);
+    setCurrentExercise(0);
+    setAnswers({});
+    setShowResults(false);
+  };
+
+  const handleExerciseChange = (index) => {
+    setCurrentExercise(index);
+    setAnswers({});
+    setShowResults(false);
+  };
+
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Typography variant="h4" sx={{ color: '#E65100', mb: 3 }}>
         Wortschatz
       </Typography>
+
+      {/* Seviye Seçimi */}
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="h6" sx={{ color: '#E65100', mb: 2 }}>Seviye Seçin:</Typography>
+        <Box sx={{ display: 'flex', gap: 2 }}>
+          {Object.keys(exercises).map((level) => (
+            <Button
+              key={level}
+              variant={currentLevel === level ? "contained" : "outlined"}
+              onClick={() => handleLevelChange(level)}
+              sx={{
+                backgroundColor: currentLevel === level ? '#E65100' : 'transparent',
+                color: currentLevel === level ? 'white' : '#E65100',
+                borderColor: '#E65100',
+                '&:hover': {
+                  backgroundColor: currentLevel === level ? '#E65100' : '#FFF8E1',
+                  borderColor: '#E65100',
+                }
+              }}
+            >
+              {level}
+            </Button>
+          ))}
+        </Box>
+      </Box>
+
+      {/* Alıştırma Seçimi */}
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="h6" sx={{ color: '#E65100', mb: 2 }}>Alıştırma Seçin:</Typography>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+          {exercises[currentLevel].map((ex, index) => (
+            <Button
+              key={ex.id}
+              variant={currentExercise === index ? "contained" : "outlined"}
+              onClick={() => handleExerciseChange(index)}
+              sx={{
+                backgroundColor: currentExercise === index ? '#E65100' : 'transparent',
+                color: currentExercise === index ? 'white' : '#E65100',
+                borderColor: '#E65100',
+                '&:hover': {
+                  backgroundColor: currentExercise === index ? '#E65100' : '#FFF8E1',
+                  borderColor: '#E65100',
+                }
+              }}
+            >
+              {ex.title}
+            </Button>
+          ))}
+        </Box>
+      </Box>
+
+      {/* Alıştırma İçeriği */}
       <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1', mb: 3 }}>
         <Typography variant="h6" sx={{ color: '#E65100' }}>{exercise.title}</Typography>
         {exercise.instruction && (
@@ -942,6 +1007,49 @@ function Wortschatz() {
                     {answers[i]?.trim().toLowerCase() === blank.answer.toLowerCase()
                       ? `${i + 1}. boşluk: Doğru!`
                       : `${i + 1}. boşluk: Yanlış. Doğru cevap: ${blank.answer}`}
+                  </Alert>
+                ))}
+              </Box>
+            )}
+          </Box>
+        ) : exercise.type === 'multiple_choice' ? (
+          <Box>
+            {exercise.questions.map((q, qIndex) => (
+              <Box key={qIndex} sx={{ mb: 3 }}>
+                <Typography variant="body1" sx={{ mb: 1 }}>{q.question}</Typography>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+                  {q.options.map((option, oIndex) => (
+                    <Button
+                      key={oIndex}
+                      variant={answers[qIndex] === oIndex ? "contained" : "outlined"}
+                      onClick={() => handleAnswerChange(qIndex, oIndex)}
+                      sx={{
+                        backgroundColor: answers[qIndex] === oIndex ? '#E65100' : 'transparent',
+                        color: answers[qIndex] === oIndex ? 'white' : '#E65100',
+                        borderColor: '#E65100',
+                        justifyContent: 'flex-start',
+                        '&:hover': {
+                          backgroundColor: answers[qIndex] === oIndex ? '#E65100' : '#FFF8E1',
+                          borderColor: '#E65100',
+                        }
+                      }}
+                    >
+                      {option}
+                    </Button>
+                  ))}
+                </Box>
+              </Box>
+            ))}
+            <Button variant="contained" onClick={handleCheckAnswers} sx={{ backgroundColor: '#E65100', mt: 2 }}>
+              Cevapları Kontrol Et
+            </Button>
+            {showResults && (
+              <Box sx={{ mt: 2 }}>
+                {exercise.questions.map((q, i) => (
+                  <Alert key={i} severity={answers[i] === q.answer ? 'success' : 'error'} sx={{ mb: 1 }}>
+                    {answers[i] === q.answer
+                      ? `${i + 1}. soru: Doğru!`
+                      : `${i + 1}. soru: Yanlış. Doğru cevap: ${q.options[q.answer]}`}
                   </Alert>
                 ))}
               </Box>
