@@ -8,7 +8,7 @@ const exercises = {
       title: "W-Fragen und Antworten",
       instruction: "Ergänzen Sie die Tabelle mit den passenden W-Fragen und Antworten.",
       type: "fill_in_the_blanks",
-      text: `Wo wohnt Franz? - In Istanbul.\nWoher kommt Franz? - Aus Frankreich.\nWelche Sprachen spricht er? - Französisch, Englisch und Deutsch.\nWas lernt Franz gerade? - Gerade Türkisch.\nWas macht er in seiner Freizeit? - Er spielt Gitarre und liest gerne Bücher.\nWo arbeitet Franz in Istanbul? - Er arbeitet an einer Privatschule.\nWas ist er von Beruf? - Er ist Deutsch und Englischlehrer.\nSeit wann arbeitet er in Istanbul? - Seit zwei Jahren.\nIst er glücklich in Istanbul? - Ja, er ist glücklich.\nIst er verheiratet? - Nein, er ist ledig.\nWas macht sie beruflich? - Sie arbeitet als Lehrerin.`,
+      text: `1. ________ ________ Franz? - In Istanbul.\n2. ________ ________ Franz? - Aus Frankreich.\n3. ________ ________ spricht er? - Französisch, Englisch und Deutsch.\n4. ________ ________ Franz gerade? - Gerade Türkisch.\n5. ________ ________ er in seiner Freizeit? - Er spielt Gitarre und liest gerne Bücher.\n6. ________ ________ Franz in Istanbul? - Er arbeitet an einer Privatschule.\n7. ________ ________ er von Beruf? - Er ist Deutsch und Englischlehrer.\n8. ________ ________ arbeitet er in Istanbul? - Seit zwei Jahren.\n9. ________ er ________ in Istanbul? - Ja, er ist glücklich.\n10. ________ er ________? - Nein, er ist ledig.\n11. ________ ________ sie beruflich? - Sie arbeitet als Lehrerin.`,
       blanks: [
         { answer: "Wo" },
         { answer: "wohnt" },
@@ -23,7 +23,7 @@ const exercises = {
         { answer: "Wo" },
         { answer: "arbeitet" },
         { answer: "Was" },
-        { answer: "is" },
+        { answer: "ist" },
         { answer: "Seit wann" },
         { answer: "arbeitet" },
         { answer: "Ist" },
