@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, Paper, TextField, Button, Box, Alert, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Container, Typography, Paper, TextField, Button, Box, Alert } from '@mui/material';
 
 const exercises = {
   A1: [
@@ -469,7 +468,7 @@ const exercises = {
   ]
 };
 
-function Grammar() {
+function Grammatik() {
   const [currentLevel, setCurrentLevel] = useState('A1');
   const [currentExercise, setCurrentExercise] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -500,89 +499,75 @@ function Grammar() {
 
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          sx={{
-            backgroundColor: '#E65100',
-            color: 'white',
-            '&:hover': {
-              backgroundColor: '#F57C00',
-            }
-          }}
-        >
-          <Typography variant="h4">Grammar</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          {/* Seviye Seçimi */}
-          <Box sx={{ mb: 3 }}>
-            <Typography variant="h6" sx={{ color: '#E65100', mb: 2 }}>Seviye Seçin:</Typography>
-            <Box sx={{ display: 'flex', gap: 2 }}>
-              {Object.keys(exercises).map((level) => (
-                <Button
-                  key={level}
-                  variant={currentLevel === level ? "contained" : "outlined"}
-                  onClick={() => handleLevelChange(level)}
-                  sx={{
-                    backgroundColor: currentLevel === level ? '#E65100' : 'transparent',
-                    color: currentLevel === level ? 'white' : '#E65100',
-                    borderColor: '#E65100',
-                    '&:hover': {
-                      backgroundColor: currentLevel === level ? '#E65100' : '#FFF8E1',
-                      borderColor: '#E65100',
-                    }
-                  }}
-                >
-                  {level}
-                </Button>
-              ))}
-            </Box>
-          </Box>
+      <Typography variant="h4" sx={{ color: '#E65100', mb: 4 }}>Grammatik</Typography>
+      
+      {/* Seviye Seçimi */}
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="h6" sx={{ color: '#E65100', mb: 2 }}>Seviye Seçin:</Typography>
+        <Box sx={{ display: 'flex', gap: 2 }}>
+          {Object.keys(exercises).map((level) => (
+            <Button
+              key={level}
+              variant={currentLevel === level ? "contained" : "outlined"}
+              onClick={() => handleLevelChange(level)}
+              sx={{
+                backgroundColor: currentLevel === level ? '#E65100' : 'transparent',
+                color: currentLevel === level ? 'white' : '#E65100',
+                borderColor: '#E65100',
+                '&:hover': {
+                  backgroundColor: currentLevel === level ? '#E65100' : '#FFF8E1',
+                  borderColor: '#E65100',
+                }
+              }}
+            >
+              {level}
+            </Button>
+          ))}
+        </Box>
+      </Box>
 
-          {/* Alıştırma İçeriği */}
-          <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1', mb: 3 }}>
-            <Typography variant="h6" sx={{ color: '#E65100' }}>{exercise.title}</Typography>
-            {exercise.instruction && (
-              <Typography variant="body1" sx={{ mb: 2, whiteSpace: 'pre-line' }}>{exercise.instruction}</Typography>
-            )}
-            {exercise.type === 'fill_in_the_blanks' ? (
-              <Box>
-                <Typography variant="body1" sx={{ whiteSpace: 'pre-line', mb: 2 }}>
-                  {exercise.text.split(/_______________/).map((part, i, arr) => (
-                    <React.Fragment key={i}>
-                      {part}
-                      {i < arr.length - 1 && (
-                        <TextField
-                          size="small"
-                          value={answers[i] || ''}
-                          onChange={e => handleAnswerChange(i, e.target.value)}
-                          sx={{ width: 80, mx: 1 }}
-                        />
-                      )}
-                    </React.Fragment>
-                  ))}
-                </Typography>
-                <Button variant="contained" onClick={handleCheckAnswers} sx={{ backgroundColor: '#E65100', mt: 2 }}>
-                  Cevapları Kontrol Et
-                </Button>
-                {showResults && (
-                  <Box sx={{ mt: 2 }}>
-                    {exercise.blanks.map((blank, i) => (
-                      <Alert key={i} severity={answers[i]?.trim().toLowerCase() === blank.answer.toLowerCase() ? 'success' : 'error'} sx={{ mb: 1 }}>
-                        {answers[i]?.trim().toLowerCase() === blank.answer.toLowerCase()
-                          ? `${i + 1}. boşluk: Doğru!`
-                          : `${i + 1}. boşluk: Yanlış. Doğru cevap: ${blank.answer}`}
-                      </Alert>
-                    ))}
-                  </Box>
-                )}
+      {/* Alıştırma İçeriği */}
+      <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1', mb: 3 }}>
+        <Typography variant="h6" sx={{ color: '#E65100' }}>{exercise.title}</Typography>
+        {exercise.instruction && (
+          <Typography variant="body1" sx={{ mb: 2, whiteSpace: 'pre-line' }}>{exercise.instruction}</Typography>
+        )}
+        {exercise.type === 'fill_in_the_blanks' ? (
+          <Box>
+            <Typography variant="body1" sx={{ whiteSpace: 'pre-line', mb: 2 }}>
+              {exercise.text.split(/_______________/).map((part, i, arr) => (
+                <React.Fragment key={i}>
+                  {part}
+                  {i < arr.length - 1 && (
+                    <TextField
+                      size="small"
+                      value={answers[i] || ''}
+                      onChange={e => handleAnswerChange(i, e.target.value)}
+                      sx={{ width: 80, mx: 1 }}
+                    />
+                  )}
+                </React.Fragment>
+              ))}
+            </Typography>
+            <Button variant="contained" onClick={handleCheckAnswers} sx={{ backgroundColor: '#E65100', mt: 2 }}>
+              Cevapları Kontrol Et
+            </Button>
+            {showResults && (
+              <Box sx={{ mt: 2 }}>
+                {exercise.blanks.map((blank, i) => (
+                  <Alert key={i} severity={answers[i]?.trim().toLowerCase() === blank.answer.toLowerCase() ? 'success' : 'error'} sx={{ mb: 1 }}>
+                    {answers[i]?.trim().toLowerCase() === blank.answer.toLowerCase()
+                      ? `${i + 1}. boşluk: Doğru!`
+                      : `${i + 1}. boşluk: Yanlış. Doğru cevap: ${blank.answer}`}
+                  </Alert>
+                ))}
               </Box>
-            ) : null}
-          </Paper>
-        </AccordionDetails>
-      </Accordion>
+            )}
+          </Box>
+        ) : null}
+      </Paper>
     </Container>
   );
 }
 
-export default Grammar; 
+export default Grammatik; 
