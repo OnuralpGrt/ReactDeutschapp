@@ -7,7 +7,7 @@ import Leseverstehen from './Leseverstehen';
 import Wortschatz from './Wortschatz';
 import Zuordnung from './Zuordnung';
 import FrageAntwort from './FrageAntwort';
-import Grammatik from './Grammatik';
+import Grammar from './Grammar';
 
 const menuItems = [
   { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: 'multiple-choice' },
@@ -15,7 +15,7 @@ const menuItems = [
   { title: 'Leseverstehen', image: 'LESEVERSTEHEN.png', route: 'leseverstehen' },
   { title: 'Wortschatz', image: 'WORTSCHATZ.png', route: 'wortschatz' },
   { title: 'Zuordnung', image: 'ZUORDNUNG-2.png', route: 'zuordnung' },
-  { title: 'Grammatik', image: 'GRAMMER.png', route: 'grammatik' },
+  { title: 'Grammatik', image: 'GRAMMER.png', route: 'grammar' },
   { title: 'Frage & Antwort', image: 'Frage-Antwort.png', route: 'frage-antwort' }
 ];
 
@@ -75,8 +75,8 @@ function App() {
         case 'frage-antwort':
           console.log('FrageAntwort bileşeni render ediliyor');
           return <FrageAntwort />;
-        case 'grammatik':
-          return <Grammatik />;
+        case 'grammar':
+          return <Grammar />;
         default:
           return (
             <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
@@ -148,7 +148,21 @@ function App() {
           <Button color="inherit" onClick={() => handlePageChange('home')}>Ana Sayfa</Button>
           <Button color="inherit" onClick={() => handlePageChange('zuordnung')}>Zuordnung</Button>
           <Button color="inherit" onClick={() => handlePageChange('frage-antwort')}>Frage & Antwort</Button>
-          <Button color="inherit" onClick={() => handlePageChange('grammatik')}>Grammatik</Button>
+          <Button
+            variant={page === 'grammar' ? "contained" : "outlined"}
+            onClick={() => handlePageChange('grammar')}
+            sx={{
+              backgroundColor: page === 'grammar' ? '#E65100' : 'transparent',
+              color: page === 'grammar' ? 'white' : '#E65100',
+              borderColor: '#E65100',
+              '&:hover': {
+                backgroundColor: page === 'grammar' ? '#E65100' : '#FFF8E1',
+                borderColor: '#E65100',
+              }
+            }}
+          >
+            Grammar
+          </Button>
         </Toolbar>
       </AppBar>
       {renderPage()}
