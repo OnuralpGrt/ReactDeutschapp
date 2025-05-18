@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, Grid, Card, CardContent, CardMedia } from '@mui/material';
+import { Container, Typography, Grid, Card, CardContent, CardMedia, AppBar, Toolbar, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import MultipleChoice from './MultipleChoice';
 import SatzeBilden from './SatzeBilden';
@@ -7,6 +7,7 @@ import Leseverstehen from './Leseverstehen';
 import Wortschatz from './Wortschatz';
 import Zuordnung from './Zuordnung';
 import FrageAntwort from './FrageAntwort';
+import Grammatik from './Grammatik';
 
 const menuItems = [
   { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: 'multiple-choice' },
@@ -75,7 +76,7 @@ function App() {
           console.log('FrageAntwort bileşeni render ediliyor');
           return <FrageAntwort />;
         case 'grammatik':
-          return <Typography variant="h4">Grammatik sayfası yakında eklenecek</Typography>;
+          return <Grammatik />;
         default:
           return (
             <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
@@ -137,7 +138,22 @@ function App() {
     }
   };
 
-  return renderPage();
+  return (
+    <div className="App">
+      <AppBar position="static" sx={{ backgroundColor: '#E65100' }}>
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Deutsch Lernen
+          </Typography>
+          <Button color="inherit" onClick={() => handlePageChange('home')}>Ana Sayfa</Button>
+          <Button color="inherit" onClick={() => handlePageChange('zuordnung')}>Zuordnung</Button>
+          <Button color="inherit" onClick={() => handlePageChange('frage-antwort')}>Frage & Antwort</Button>
+          <Button color="inherit" onClick={() => handlePageChange('grammatik')}>Grammatik</Button>
+        </Toolbar>
+      </AppBar>
+      {renderPage()}
+    </div>
+  );
 }
 
 export default App; 
