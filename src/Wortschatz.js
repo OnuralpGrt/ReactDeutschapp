@@ -270,6 +270,37 @@ const exercises = {
         { answer: "einem" },
         { answer: "den" }
       ]
+    },
+    {
+      id: 8,
+      title: "Zuordnung",
+      instruction: "Ergänzen Sie die Tabelle mit den passenden W-Fragen und Antworten.",
+      type: "fill_in_the_blanks",
+      text: `Wo wohnt Franz? - In Istanbul.\nWoher kommt Franz? - Aus Frankreich.\nWelche Sprachen spricht er? - Französisch, Englisch und Deutsch.\nWas lernt Franz gerade? - Gerade Türkisch.\nWas macht er in seiner Freizeit? - Er spielt Gitarre und liest gerne Bücher.\nWo arbeitet Franz in Istanbul? - Er arbeitet an einer Privatschule.\nWas ist er von Beruf? - Er ist Deutsch und Englischlehrer.\nSeit wann arbeitet er in Istanbul? - Seit zwei Jahren.\nIst er glücklich in Istanbul? - Ja, er ist glücklich.\nIst er verheiratet? - Nein, er ist ledig.\nWas macht sie beruflich? - Sie arbeitet als Lehrerin.`,
+      blanks: [
+        { answer: "Wo" },
+        { answer: "wohnt" },
+        { answer: "Woher" },
+        { answer: "kommt" },
+        { answer: "Welche Sprachen" },
+        { answer: "spricht" },
+        { answer: "Was" },
+        { answer: "lernt" },
+        { answer: "Was" },
+        { answer: "macht" },
+        { answer: "Wo" },
+        { answer: "arbeitet" },
+        { answer: "Was" },
+        { answer: "ist" },
+        { answer: "Seit wann" },
+        { answer: "arbeitet" },
+        { answer: "Ist" },
+        { answer: "glücklich" },
+        { answer: "Ist" },
+        { answer: "verheiratet" },
+        { answer: "Was" },
+        { answer: "macht" }
+      ]
     }
   ],
   A2: [
@@ -452,6 +483,22 @@ const exercises = {
         { answer: "stören" },
         { answer: "sucht" },
         { answer: "besitzen" }
+      ]
+    },
+    {
+      id: 6,
+      title: "Zuordnung: Adjektive",
+      instruction: "Finden Sie die ähnlichen Begriffe für die Adjektive.",
+      type: "fill_in_the_blanks",
+      text: `groß - ________\nklein - ________\nschön - ________\nschnell - ________\nlangsam - ________\ntraurig - ________\nglücklich - ________\n\nWörter zur Auswahl:\nunglücklich\nkompliziert\nleicht\nwinzig\nriesig\nhübsch\nfroh\neinfach\nflink\nschwer\ngemächlich`,
+      blanks: [
+        { answer: "riesig" },
+        { answer: "winzig" },
+        { answer: "hübsch" },
+        { answer: "flink" },
+        { answer: "gemächlich" },
+        { answer: "unglücklich" },
+        { answer: "froh" }
       ]
     }
   ],
