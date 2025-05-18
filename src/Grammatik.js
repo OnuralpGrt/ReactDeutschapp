@@ -775,24 +775,42 @@ function Grammatik() {
           <Box>
             <Typography variant="body1" sx={{ whiteSpace: 'pre-line', mb: 2 }}>
               {(() => {
-                // Boşlukları tespit eden regex: alt çizgi, tireli numara, parantezli numara, üç nokta, kısa çizgi, ...
-                const gapRegex = /(__+|–\d+–|\(\d+\)|-{1,2}\d+-|\.{3,}|…+)/g;
+                // Gelişmiş boşluk regex'i: alt çizgi, tireli numara, parantezli numara, üç nokta, kısa çizgi, ...
+                const gapRegex = /(__+|–\d+–|\(\d+\)|-{1,2}\d+-|\.{3,}|…+|\[-?\d+\]|-\d+-|\d+\.|\d+\)|\(\d+\)|\d+\-|\s-\s|\s–\s)/g;
                 const parts = exercise.text.split(gapRegex);
                 const gaps = [...exercise.text.matchAll(gapRegex)];
                 let gapIndex = 0;
-                return parts.map((part, i) => (
-                  <React.Fragment key={i}>
-                    {part}
-                    {gapIndex < gaps.length && (
+                const totalGaps = exercise.blanks.length;
+                const jsx = [];
+                for (let i = 0; i < parts.length; i++) {
+                  jsx.push(<React.Fragment key={i + '-part'}>{parts[i]}</React.Fragment>);
+                  if (gapIndex < gaps.length) {
+                    jsx.push(
                       <TextField
+                        key={i + '-gap'}
                         size="small"
                         value={answers[gapIndex] || ''}
                         onChange={e => handleAnswerChange(gapIndex, e.target.value)}
                         sx={{ width: 80, mx: 1 }}
                       />
-                    ) && ++gapIndex}
-                  </React.Fragment>
-                ));
+                    );
+                    gapIndex++;
+                  }
+                }
+                // Eğer metindeki boşluk sayısı, blanks dizisinden azsa, kalan kutuları sona ekle
+                while (gapIndex < totalGaps) {
+                  jsx.push(
+                    <TextField
+                      key={'extra-gap-' + gapIndex}
+                      size="small"
+                      value={answers[gapIndex] || ''}
+                      onChange={e => handleAnswerChange(gapIndex, e.target.value)}
+                      sx={{ width: 80, mx: 1 }}
+                    />
+                  );
+                  gapIndex++;
+                }
+                return jsx;
               })()}
             </Typography>
             <Button variant="contained" onClick={handleCheckAnswers} sx={{ backgroundColor: '#E65100', mt: 2 }}>
