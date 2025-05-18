@@ -774,19 +774,26 @@ function Grammatik() {
         {exercise.type === 'fill_in_the_blanks' ? (
           <Box>
             <Typography variant="body1" sx={{ whiteSpace: 'pre-line', mb: 2 }}>
-              {exercise.text.split(/_______________/).map((part, i, arr) => (
-                <React.Fragment key={i}>
-                  {part}
-                  {i < arr.length - 1 && (
-                    <TextField
-                      size="small"
-                      value={answers[i] || ''}
-                      onChange={e => handleAnswerChange(i, e.target.value)}
-                      sx={{ width: 80, mx: 1 }}
-                    />
-                  )}
-                </React.Fragment>
-              ))}
+              {(() => {
+                // Boşlukları tespit eden regex: alt çizgi, tireli numara, parantezli numara, üç nokta, kısa çizgi, ...
+                const gapRegex = /(__+|–\d+–|\(\d+\)|-{1,2}\d+-|\.{3,}|…+)/g;
+                const parts = exercise.text.split(gapRegex);
+                const gaps = [...exercise.text.matchAll(gapRegex)];
+                let gapIndex = 0;
+                return parts.map((part, i) => (
+                  <React.Fragment key={i}>
+                    {part}
+                    {gapIndex < gaps.length && (
+                      <TextField
+                        size="small"
+                        value={answers[gapIndex] || ''}
+                        onChange={e => handleAnswerChange(gapIndex, e.target.value)}
+                        sx={{ width: 80, mx: 1 }}
+                      />
+                    ) && ++gapIndex}
+                  </React.Fragment>
+                ));
+              })()}
             </Typography>
             <Button variant="contained" onClick={handleCheckAnswers} sx={{ backgroundColor: '#E65100', mt: 2 }}>
               Cevapları Kontrol Et
