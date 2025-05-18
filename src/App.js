@@ -43,68 +43,87 @@ function App() {
   const [page, setPage] = useState('menu');
 
   const handlePageChange = (newPage) => {
-    console.log('Changing page to:', newPage);
-    setPage(newPage);
+    console.log('Mevcut sayfa:', page);
+    console.log('Yeni sayfa:', newPage);
+    try {
+      setPage(newPage);
+      console.log('Sayfa değişimi başarılı');
+    } catch (error) {
+      console.error('Sayfa değişimi sırasında hata:', error);
+    }
   };
 
   const renderPage = () => {
-    switch (page) {
-      case 'multiple-choice':
-        return <MultipleChoice />;
-      case 'satze-bilden':
-        return <SatzeBilden />;
-      case 'leseverstehen':
-        return <Leseverstehen />;
-      case 'wortschatz':
-        return <Wortschatz />;
-      default:
-        return (
-          <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
-            <Typography 
-              variant="h4" 
-              component="h1" 
-              sx={{
-                mb: 4, 
-                fontWeight: 'bold',
-                color: '#E65100',
-                textAlign: 'center',
-                textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
-              }}
-            >
-              DeutschApp
-            </Typography>
-            <Grid container spacing={3}>
-              {menuItems.map((item, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
-                  <StyledCard
-                    onClick={() => handlePageChange(item.route)}
-                    sx={{ cursor: 'pointer' }}
-                  >
-                    <StyledCardMedia
-                      component="img"
-                      image={process.env.PUBLIC_URL + '/' + item.image}
-                      title={item.title}
-                      alt={item.title}
-                    />
-                    <CardContent sx={{ textAlign: 'center', padding: '12px' }}>
-                      <Typography 
-                        variant="h6" 
-                        component="h2"
-                        sx={{
-                          color: '#E65100',
-                          fontWeight: 'medium',
-                          fontSize: '1.1rem'
-                        }}
-                      >
-                        {item.title}
-                      </Typography>
-                    </CardContent>
-                  </StyledCard>
-                </Grid>
-              ))}
-            </Grid>
-          </Container>
-        );
+    console.log('renderPage çağrıldı, mevcut sayfa:', page);
+    try {
+      switch (page) {
+        case 'multiple-choice':
+          return <MultipleChoice />;
+        case 'satze-bilden':
+          return <SatzeBilden />;
+        case 'leseverstehen':
+          return <Leseverstehen />;
+        case 'wortschatz':
+          console.log('Wortschatz bileşeni render ediliyor');
+          return <Wortschatz />;
+        default:
+          return (
+            <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
+              <Typography 
+                variant="h4" 
+                component="h1" 
+                sx={{
+                  mb: 4, 
+                  fontWeight: 'bold',
+                  color: '#E65100',
+                  textAlign: 'center',
+                  textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
+                }}
+              >
+                DeutschApp
+              </Typography>
+              <Grid container spacing={3}>
+                {menuItems.map((item, index) => (
+                  <Grid item xs={12} sm={6} md={4} key={index}>
+                    <StyledCard
+                      onClick={() => handlePageChange(item.route)}
+                      sx={{ cursor: 'pointer' }}
+                    >
+                      <StyledCardMedia
+                        component="img"
+                        image={process.env.PUBLIC_URL + '/' + item.image}
+                        title={item.title}
+                        alt={item.title}
+                      />
+                      <CardContent sx={{ textAlign: 'center', padding: '12px' }}>
+                        <Typography 
+                          variant="h6" 
+                          component="h2"
+                          sx={{
+                            color: '#E65100',
+                            fontWeight: 'medium',
+                            fontSize: '1.1rem'
+                          }}
+                        >
+                          {item.title}
+                        </Typography>
+                      </CardContent>
+                    </StyledCard>
+                  </Grid>
+                ))}
+              </Grid>
+            </Container>
+          );
+      }
+    } catch (error) {
+      console.error('Sayfa render edilirken hata:', error);
+      return (
+        <Container maxWidth="md" sx={{ py: 4 }}>
+          <Typography variant="h4" color="error">
+            Bir hata oluştu. Lütfen sayfayı yenileyin.
+          </Typography>
+        </Container>
+      );
     }
   };
 
