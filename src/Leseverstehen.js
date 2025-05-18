@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Typography, Paper, TextField, Button, Box, Alert, FormControlLabel, Radio, RadioGroup, FormControl, Checkbox } from '@mui/material';
 
 const exercises = {
@@ -1149,12 +1149,6 @@ function Leseverstehen() {
   const [showResults, setShowResults] = useState(false);
   const [showHints, setShowHints] = useState({});
 
-  useEffect(() => {
-    console.log('Leseverstehen component mounted');
-    console.log('Current level:', currentLevel);
-    console.log('Current exercise:', currentExercise);
-  }, [currentLevel, currentExercise]);
-
   const handleAnswerChange = (questionIndex, value) => {
     setAnswers(prev => ({
       ...prev,
@@ -1174,7 +1168,6 @@ function Leseverstehen() {
   };
 
   const handleLevelChange = (level) => {
-    console.log('Changing level to:', level);
     setCurrentLevel(level);
     setCurrentExercise(0);
     setAnswers({});
@@ -1183,7 +1176,6 @@ function Leseverstehen() {
   };
 
   const handleExerciseChange = (exerciseIndex) => {
-    console.log('Changing exercise to:', exerciseIndex);
     setCurrentExercise(exerciseIndex);
     setAnswers({});
     setShowResults(false);
@@ -1195,17 +1187,6 @@ function Leseverstehen() {
   };
 
   const exercise = exercises[currentLevel][currentExercise];
-
-  if (!exercise) {
-    console.log('No exercise found for level:', currentLevel, 'exercise:', currentExercise);
-    return (
-      <Container maxWidth="md" sx={{ py: 4 }}>
-        <Typography variant="h4" component="h1" sx={{ color: '#E65100' }}>
-          Alıştırma bulunamadı
-        </Typography>
-      </Container>
-    );
-  }
 
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
@@ -1283,49 +1264,8 @@ function Leseverstehen() {
         </Typography>
       </Paper>
 
-      {exercise.type === "richtig_falsch_quiz" ? (
-        <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
-          {exercise.questions.map((q, index) => (
-            <Box key={index} sx={{ mb: 3 }}>
-              <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
-                {index + 1}. {q.question}
-              </Typography>
-              <FormControl component="fieldset">
-                <RadioGroup
-                  row
-                  value={answers[index] || ''}
-                  onChange={(e) => handleAnswerChange(index, e.target.value)}
-                >
-                  <FormControlLabel value="richtig" control={<Radio />} label="Richtig" />
-                  <FormControlLabel value="falsch" control={<Radio />} label="Falsch" />
-                </RadioGroup>
-              </FormControl>
-              <Button 
-                variant="text" 
-                onClick={() => toggleHint(index)}
-                sx={{ color: '#E65100' }}
-              >
-                {showHints[index] ? 'İpucunu Gizle' : 'İpucu Göster'}
-              </Button>
-              {showHints[index] && (
-                <Alert severity="info" sx={{ mt: 1 }}>
-                  {q.hint}
-                </Alert>
-              )}
-              {showResults && (
-                <Alert 
-                  severity={answers[index] === q.answer ? 'success' : 'error'}
-                  sx={{ mt: 1 }}
-                >
-                  {answers[index] === q.answer 
-                    ? 'Doğru!' 
-                    : `Yanlış. Doğru cevap: ${q.answer === 'richtig' ? 'Richtig' : 'Falsch'}`}
-                </Alert>
-              )}
-            </Box>
-          ))}
-        </Paper>
-      ) : exercise.type === "open_ended_quiz" ? (
+      {/* Sorular */}
+      {exercise.type === "open_ended_quiz" && (
         <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
           {exercise.questions.map((q, index) => (
             <Box key={index} sx={{ mb: 3 }}>
@@ -1366,233 +1306,6 @@ function Leseverstehen() {
             </Box>
           ))}
         </Paper>
-      ) : exercise.type === "multiple_choice_quiz" ? (
-        <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
-          {exercise.questions.map((q, index) => (
-            <Box key={index} sx={{ mb: 3 }}>
-              <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
-                {index + 1}. {q.question}
-              </Typography>
-              <FormControl component="fieldset">
-                <RadioGroup
-                  value={answers[index] || ''}
-                  onChange={(e) => handleAnswerChange(index, parseInt(e.target.value))}
-                >
-                  {q.options.map((option, optIndex) => (
-                    <FormControlLabel
-                      key={optIndex}
-                      value={optIndex}
-                      control={<Radio />}
-                      label={option}
-                    />
-                  ))}
-                </RadioGroup>
-              </FormControl>
-              <Button 
-                variant="text" 
-                onClick={() => toggleHint(index)}
-                sx={{ color: '#E65100' }}
-              >
-                {showHints[index] ? 'İpucunu Gizle' : 'İpucu Göster'}
-              </Button>
-              {showHints[index] && (
-                <Alert severity="info" sx={{ mt: 1 }}>
-                  {q.hint}
-                </Alert>
-              )}
-              {showResults && (
-                <Alert 
-                  severity={answers[index] === q.answer ? 'success' : 'error'}
-                  sx={{ mt: 1 }}
-                >
-                  {answers[index] === q.answer 
-                    ? 'Doğru!' 
-                    : `Yanlış. Doğru cevap: ${q.options[q.answer]}`}
-                </Alert>
-              )}
-            </Box>
-          ))}
-        </Paper>
-      ) : exercise.type === "matching_quiz" ? (
-        <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
-          {exercise.questions.map((q, index) => (
-            <Box key={index} sx={{ mb: 3 }}>
-              <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
-                {index + 1}. {q.statement}
-              </Typography>
-              <FormControl component="fieldset">
-                {q.options.map((option, optIndex) => (
-                  <FormControlLabel
-                    key={optIndex}
-                    control={
-                      <Checkbox
-                        checked={answers[index]?.includes(optIndex) || false}
-                        onChange={(e) => {
-                          const currentAnswers = answers[index] || [];
-                          if (e.target.checked) {
-                            handleAnswerChange(index, [...currentAnswers, optIndex]);
-                          } else {
-                            handleAnswerChange(index, currentAnswers.filter(i => i !== optIndex));
-                          }
-                        }}
-                      />
-                    }
-                    label={option}
-                  />
-                ))}
-              </FormControl>
-              <Button 
-                variant="text" 
-                onClick={() => toggleHint(index)}
-                sx={{ color: '#E65100' }}
-              >
-                {showHints[index] ? 'İpucunu Gizle' : 'İpucu Göster'}
-              </Button>
-              {showHints[index] && (
-                <Alert severity="info" sx={{ mt: 1 }}>
-                  {q.hint}
-                </Alert>
-              )}
-              {showResults && (
-                <Alert 
-                  severity={
-                    Array.isArray(q.answer)
-                      ? JSON.stringify([...answers[index]].sort()) === JSON.stringify([...q.answer].sort())
-                        ? 'success'
-                        : 'error'
-                      : answers[index]?.includes(q.answer)
-                        ? 'success'
-                        : 'error'
-                  }
-                  sx={{ mt: 1 }}
-                >
-                  {Array.isArray(q.answer)
-                    ? JSON.stringify([...answers[index]].sort()) === JSON.stringify([...q.answer].sort())
-                      ? 'Doğru!'
-                      : `Yanlış. Doğru cevaplar: ${q.answer.map(i => q.options[i]).join(', ')}`
-                    : answers[index]?.includes(q.answer)
-                      ? 'Doğru!'
-                      : `Yanlış. Doğru cevap: ${q.options[q.answer]}`
-                  }
-                </Alert>
-              )}
-            </Box>
-          ))}
-        </Paper>
-      ) : exercise.type === "ja_nein_quiz" ? (
-        <Paper elevation={3} sx={{ p: 3, backgroundColor: '#FFF8E1' }}>
-          {exercise.questions.map((q, index) => (
-            <Box key={index} sx={{ mb: 3 }}>
-              <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
-                {index + 1}. {q.question}
-              </Typography>
-              <FormControl component="fieldset">
-                <RadioGroup
-                  row
-                  value={answers[index] || ''}
-                  onChange={(e) => handleAnswerChange(index, e.target.value)}
-                >
-                  <FormControlLabel value="ja" control={<Radio />} label="Ja" />
-                  <FormControlLabel value="nein" control={<Radio />} label="Nein" />
-                </RadioGroup>
-              </FormControl>
-              <Button 
-                variant="text" 
-                onClick={() => toggleHint(index)}
-                sx={{ color: '#E65100' }}
-              >
-                {showHints[index] ? 'İpucunu Gizle' : 'İpucu Göster'}
-              </Button>
-              {showHints[index] && (
-                <Alert severity="info" sx={{ mt: 1 }}>
-                  {q.hint}
-                </Alert>
-              )}
-              {showResults && (
-                <Alert 
-                  severity={answers[index] === q.answer ? 'success' : 'error'}
-                  sx={{ mt: 1 }}
-                >
-                  {answers[index] === q.answer 
-                    ? 'Doğru!' 
-                    : `Yanlış. Doğru cevap: ${q.answer === 'ja' ? 'Ja' : 'Nein'}`}
-                </Alert>
-              )}
-            </Box>
-          ))}
-        </Paper>
-      ) : (
-        exercise.tasks?.map((task, taskIndex) => (
-          <Paper key={taskIndex} elevation={3} sx={{ p: 3, mb: 3, backgroundColor: '#FFF8E1' }}>
-            <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
-              {task.title}
-            </Typography>
-            
-            {task.questions.map((q, index) => (
-              <Box key={index} sx={{ mb: 3 }}>
-                <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
-                  {index + 1}. {q.question}
-                </Typography>
-                
-                {task.type === "multiple_choice" ? (
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={answers[`${taskIndex}-${index}`] || false}
-                        onChange={(e) => handleAnswerChange(`${taskIndex}-${index}`, e.target.checked)}
-                      />
-                    }
-                    label=""
-                  />
-                ) : (
-                  <TextField
-                    fullWidth
-                    multiline
-                    rows={2}
-                    value={answers[`${taskIndex}-${index}`] || ''}
-                    onChange={(e) => handleAnswerChange(`${taskIndex}-${index}`, e.target.value)}
-                    variant="outlined"
-                    sx={{ mb: 1 }}
-                  />
-                )}
-                
-                <Button 
-                  variant="text" 
-                  onClick={() => toggleHint(`${taskIndex}-${index}`)}
-                  sx={{ color: '#E65100' }}
-                >
-                  {showHints[`${taskIndex}-${index}`] ? 'İpucunu Gizle' : 'İpucu Göster'}
-                </Button>
-                
-                {showHints[`${taskIndex}-${index}`] && (
-                  <Alert severity="info" sx={{ mt: 1 }}>
-                    {q.hint}
-                  </Alert>
-                )}
-                
-                {showResults && (
-                  <Alert 
-                    severity={
-                      task.type === "multiple_choice" 
-                        ? answers[`${taskIndex}-${index}`] === q.answer ? 'success' : 'error'
-                        : answers[`${taskIndex}-${index}`]?.toLowerCase() === q.answer.toLowerCase() ? 'success' : 'error'
-                    }
-                    sx={{ mt: 1 }}
-                  >
-                    {task.type === "multiple_choice"
-                      ? answers[`${taskIndex}-${index}`] === q.answer
-                        ? 'Doğru!'
-                        : `Yanlış. Doğru cevap: ${q.answer ? 'Evet' : 'Hayır'}`
-                      : answers[`${taskIndex}-${index}`]?.toLowerCase() === q.answer.toLowerCase()
-                        ? 'Doğru!'
-                        : `Yanlış. Doğru cevap: ${q.answer}`
-                    }
-                  </Alert>
-                )}
-              </Box>
-            ))}
-          </Paper>
-        ))
       )}
 
       <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
