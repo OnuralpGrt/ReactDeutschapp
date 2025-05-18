@@ -3,6 +3,7 @@ import { Container, Typography, Grid, Card, CardContent, CardMedia } from '@mui/
 import { styled } from '@mui/material/styles';
 import MultipleChoice from './MultipleChoice';
 import SatzeBilden from './SatzeBilden';
+import Leseverstehen from './Leseverstehen';
 
 const menuItems = [
   { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: 'multiple-choice' },
@@ -47,6 +48,10 @@ function App() {
 
   if (page === 'satze-bilden') {
     return <SatzeBilden />;
+  }
+
+  if (page === 'leseverstehen') {
+    return <Leseverstehen />;
   }
 
   return (
