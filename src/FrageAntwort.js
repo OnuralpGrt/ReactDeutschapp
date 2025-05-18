@@ -46,6 +46,23 @@ const exercises = {
         { answer: "Was" },
         { answer: "will" }
       ]
+    },
+    {
+      id: 3,
+      title: "Fragen und Antworten zum Thema Einkaufen",
+      instruction: "Ordnen Sie die Antworten den Fragen zu.",
+      type: "fill_in_the_blanks",
+      text: `1. Wo kann ich Brot kaufen? - ________\n\n2. Wie viel kostet ein Kilo Äpfel? - ________\n\n3. Wann hat der Supermarkt geöffnet? - ________\n\n4. Wo finde ich die Milch? - ________\n\n5. Kann ich mit Karte bezahlen? - ________\n\n6. Wo ist die Kasse? - ________\n\n7. Haben Sie auch Bio-Produkte? - ________\n\n8. Wie komme ich zum nächsten Supermarkt? - ________\n\nAntworten:\nA) Ja, wir haben viele Bio-Produkte im Regal 3.\nB) Die Kasse ist am Ende des Ganges.\nC) Die Milch finden Sie im Kühlregal.\nD) Sie können Brot in der Bäckerei kaufen.\nE) Ein Kilo Äpfel kostet 2,99 Euro.\nF) Der Supermarkt ist von 8 bis 20 Uhr geöffnet.\nG) Ja, wir akzeptieren alle Karten.\nH) Gehen Sie die Straße entlang und biegen Sie rechts ab.`,
+      blanks: [
+        { answer: "D" },
+        { answer: "E" },
+        { answer: "F" },
+        { answer: "C" },
+        { answer: "G" },
+        { answer: "B" },
+        { answer: "A" },
+        { answer: "H" }
+      ]
     }
   ],
   A2: [
@@ -88,6 +105,23 @@ const exercises = {
         { answer: "Der höchste Berg der Welt heißt Mount Everest" },
         { answer: "Der Feiertag am 25. Dezember ist Weihnachten" },
         { answer: "Der Regenbogen hat sieben Farben" }
+      ]
+    },
+    {
+      id: 3,
+      title: "Fragen und Antworten zum Thema Reisen",
+      instruction: "Beantworten Sie die Fragen mit den passenden Antworten.",
+      type: "fill_in_the_blanks",
+      text: `1. Wohin fahren Sie in den Urlaub? - ________\n\n2. Wie lange bleiben Sie dort? - ________\n\n3. Mit wem reisen Sie? - ________\n\n4. Wie reisen Sie? - ________\n\n5. Wo übernachten Sie? - ________\n\n6. Was möchten Sie dort machen? - ________\n\n7. Wann fahren Sie los? - ________\n\n8. Wie viel kostet der Urlaub? - ________\n\nAntworten:\nA) Ich fahre mit dem Zug nach Italien.\nB) Ich bleibe zwei Wochen.\nC) Ich reise mit meiner Familie.\nD) Ich übernachte in einem Hotel am Strand.\nE) Ich möchte schwimmen und die Stadt besichtigen.\nF) Der Urlaub kostet 800 Euro pro Person.\nG) Ich fahre nächsten Montag los.\nH) Ich fahre nach Italien, ans Meer.`,
+      blanks: [
+        { answer: "H" },
+        { answer: "B" },
+        { answer: "C" },
+        { answer: "A" },
+        { answer: "D" },
+        { answer: "E" },
+        { answer: "G" },
+        { answer: "F" }
       ]
     }
   ],
