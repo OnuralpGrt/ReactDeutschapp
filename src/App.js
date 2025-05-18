@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Typography, Grid, Card, CardContent, CardMedia } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import MultipleChoice from './MultipleChoice';
+import SatzeBilden from './SatzeBilden';
 
 const menuItems = [
   { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: '/multiple-choice' },
@@ -44,6 +45,10 @@ function App() {
     return <MultipleChoice />;
   }
 
+  if (page === 'satze-bilden') {
+    return <SatzeBilden />;
+  }
+
   return (
     <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
       <Typography 
@@ -65,8 +70,9 @@ function App() {
             <StyledCard
               onClick={() => {
                 if (item.title === 'Multiple Choice') setPage('multiple-choice');
+                if (item.title === 'Sätze Bilden') setPage('satze-bilden');
               }}
-              sx={{ cursor: item.title === 'Multiple Choice' ? 'pointer' : 'default' }}
+              sx={{ cursor: (item.title === 'Multiple Choice' || item.title === 'Sätze Bilden') ? 'pointer' : 'default' }}
             >
               <StyledCardMedia
                 component="img"
