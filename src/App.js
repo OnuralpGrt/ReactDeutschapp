@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import MultipleChoice from './MultipleChoice';
 import SatzeBilden from './SatzeBilden';
 import Leseverstehen from './Leseverstehen';
+import Wortschatz from './Wortschatz';
 
 const menuItems = [
   { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: 'multiple-choice' },
@@ -54,6 +55,8 @@ function App() {
         return <SatzeBilden />;
       case 'leseverstehen':
         return <Leseverstehen />;
+      case 'wortschatz':
+        return <Wortschatz />;
       default:
         return (
           <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
