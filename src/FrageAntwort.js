@@ -182,6 +182,21 @@ const exercises = {
         { answer: "4" },
         { answer: "6" }
       ]
+    },
+    {
+      id: 3,
+      title: "Fragen und Antworten zum Thema Studium",
+      instruction: "Ordnen Sie die Antworten den Fragen zu.",
+      type: "fill_in_the_blanks",
+      text: `a) Welche Vorteile bringen Fremdsprachen mit sich? - ________\n\nb) Aus welchen Gründen wollen Studierende nach dem Studium ins Ausland gehen? - ________\n\nc) Was müssen Studierende während des Studiums machen? - ________\n\nd) Wie lange dauert ein Semester? - ________\n\ne) Was fällt Ihnen in dieser Grafik auf? - ________\n\nf) Was versteht man unter Studienkolleg? - ________\n\nAntworten:\nA) In dieser Grafik fällt mir auf, dass die Zahl der Studierenden, die im Ausland studieren wollen, gesunken ist.\nB) Studierende müssen während des Studiums auch ein Praktikum machen.\nC) Fremdsprachen bringen die Karriere und Entwicklung der kognitiven Fähigkeiten mit sich.\nD) Studierende wollen nach dem Studium ins Ausland gehen, weil sie denken, dass Auslandserfahrung ihnen ermöglicht, leichter einen Arbeitsplatz zu finden und weil sie ihre Fremdsprache erweitern können.\nE) Unter Studienkolleg versteht man eine Institution, die 1 Jahr lang auf das Studium sprachlich und fachlich vorbereitet.\nF) Ein Semester dauert ca. vier Monate.`,
+      blanks: [
+        { answer: "C" },
+        { answer: "D" },
+        { answer: "B" },
+        { answer: "F" },
+        { answer: "A" },
+        { answer: "E" }
+      ]
     }
   ]
 };

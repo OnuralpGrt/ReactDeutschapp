@@ -74,6 +74,8 @@ function App() {
         case 'frage-antwort':
           console.log('FrageAntwort bileşeni render ediliyor');
           return <FrageAntwort />;
+        case 'grammatik':
+          return <Typography variant="h4">Grammatik sayfası yakında eklenecek</Typography>;
         default:
           return (
             <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
