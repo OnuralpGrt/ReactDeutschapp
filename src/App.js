@@ -42,6 +42,10 @@ const StyledCardMedia = styled(CardMedia)({
 function App() {
   const [page, setPage] = useState('menu');
 
+  const handlePageChange = (newPage) => {
+    setPage(newPage);
+  };
+
   if (page === 'multiple-choice') {
     return <MultipleChoice />;
   }
@@ -74,7 +78,9 @@ function App() {
           <Grid item xs={12} sm={6} md={4} key={index}>
             <StyledCard
               onClick={() => {
-                if (item.route) setPage(item.route);
+                if (item.route) {
+                  handlePageChange(item.route);
+                }
               }}
               sx={{ cursor: item.route ? 'pointer' : 'default' }}
             >

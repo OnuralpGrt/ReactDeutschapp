@@ -1182,13 +1182,34 @@ function Leseverstehen() {
     setShowHints({});
   };
 
+  const handleBackToMenu = () => {
+    window.location.reload();
+  };
+
   const exercise = exercises[currentLevel][currentExercise];
 
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom align="center" sx={{ color: '#E65100' }}>
-        Leseverstehen
-      </Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
+        <Button
+          variant="outlined"
+          onClick={handleBackToMenu}
+          sx={{
+            color: '#E65100',
+            borderColor: '#E65100',
+            '&:hover': {
+              backgroundColor: '#FFF8E1',
+              borderColor: '#E65100'
+            }
+          }}
+        >
+          Ana Menüye Dön
+        </Button>
+        <Typography variant="h4" component="h1" sx={{ color: '#E65100' }}>
+          Leseverstehen
+        </Typography>
+        <Box sx={{ width: 100 }} /> {/* Boşluk için */}
+      </Box>
 
       {/* Seviye Seçimi */}
       <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center', gap: 2 }}>
