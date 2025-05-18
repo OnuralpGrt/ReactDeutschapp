@@ -143,26 +143,8 @@ function App() {
       <AppBar position="static" sx={{ backgroundColor: '#E65100' }}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Deutsch Lernen
+            DeutschApp
           </Typography>
-          <Button color="inherit" onClick={() => handlePageChange('home')}>Ana Sayfa</Button>
-          <Button color="inherit" onClick={() => handlePageChange('zuordnung')}>Zuordnung</Button>
-          <Button color="inherit" onClick={() => handlePageChange('frage-antwort')}>Frage & Antwort</Button>
-          <Button
-            variant={page === 'grammatik' ? "contained" : "outlined"}
-            onClick={() => handlePageChange('grammatik')}
-            sx={{
-              backgroundColor: page === 'grammatik' ? '#E65100' : 'transparent',
-              color: page === 'grammatik' ? 'white' : '#E65100',
-              borderColor: '#E65100',
-              '&:hover': {
-                backgroundColor: page === 'grammatik' ? '#E65100' : '#FFF8E1',
-                borderColor: '#E65100',
-              }
-            }}
-          >
-            Grammatik
-          </Button>
         </Toolbar>
       </AppBar>
       {renderPage()}
