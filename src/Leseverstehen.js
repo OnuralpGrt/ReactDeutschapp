@@ -1165,13 +1165,72 @@ function Leseverstehen() {
     }));
   };
 
+  const handleLevelChange = (level) => {
+    setCurrentLevel(level);
+    setCurrentExercise(0);
+    setAnswers({});
+    setShowResults(false);
+    setShowHints({});
+  };
+
+  const handleExerciseChange = (exerciseIndex) => {
+    setCurrentExercise(exerciseIndex);
+    setAnswers({});
+    setShowResults(false);
+    setShowHints({});
+  };
+
   const exercise = exercises[currentLevel][currentExercise];
 
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom align="center" sx={{ color: '#E65100' }}>
-        Leseverstehen - {currentLevel}
+        Leseverstehen
       </Typography>
+
+      {/* Seviye Seçimi */}
+      <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center', gap: 2 }}>
+        {Object.keys(exercises).map((level) => (
+          <Button
+            key={level}
+            variant={currentLevel === level ? "contained" : "outlined"}
+            onClick={() => handleLevelChange(level)}
+            sx={{
+              backgroundColor: currentLevel === level ? '#E65100' : 'transparent',
+              color: currentLevel === level ? 'white' : '#E65100',
+              borderColor: '#E65100',
+              '&:hover': {
+                backgroundColor: currentLevel === level ? '#BF360C' : '#FFF8E1',
+                borderColor: '#E65100'
+              }
+            }}
+          >
+            {level}
+          </Button>
+        ))}
+      </Box>
+
+      {/* Alıştırma Seçimi */}
+      <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center', gap: 1, flexWrap: 'wrap' }}>
+        {exercises[currentLevel].map((ex, index) => (
+          <Button
+            key={index}
+            variant={currentExercise === index ? "contained" : "outlined"}
+            onClick={() => handleExerciseChange(index)}
+            sx={{
+              backgroundColor: currentExercise === index ? '#E65100' : 'transparent',
+              color: currentExercise === index ? 'white' : '#E65100',
+              borderColor: '#E65100',
+              '&:hover': {
+                backgroundColor: currentExercise === index ? '#BF360C' : '#FFF8E1',
+                borderColor: '#E65100'
+              }
+            }}
+          >
+            {ex.title}
+          </Button>
+        ))}
+      </Box>
 
       <Paper elevation={3} sx={{ p: 3, mb: 3, backgroundColor: '#FFF8E1' }}>
         <Typography variant="h6" gutterBottom sx={{ color: '#E65100' }}>
