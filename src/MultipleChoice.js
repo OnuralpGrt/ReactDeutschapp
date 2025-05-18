@@ -559,72 +559,72 @@ const questions = {
       answer: 1
     },
     {
-      question: 'Welche Kombination passt nicht?',
+      question: 'Welche Kombination passt nicht?\nDownloaden-Hochladen\nb) Produktion-Herstellung\nc) Experiment-Versuch\nd) Produkt-Ware',
       options: ['Downloaden-Hochladen', 'Produktion-Herstellung', 'Experiment-Versuch', 'Produkt-Ware'],
       answer: 3
     },
     {
-      question: 'Welche Kombination passt nicht?',
+      question: 'Welche Kombination passt nicht?\nReservierung-Buchung\nb) Start - Ende\nc) Event-Veranstaltung\nd) Studie - Forschung',
       options: ['Reservierung-Buchung', 'Start - Ende', 'Event-Veranstaltung', 'Studie - Forschung'],
       answer: 1
     },
     {
-      question: 'Welche Kombination passt nicht?',
+      question: 'Welche Kombination passt nicht?\nÄußerlichkeit-Innerlichkeit\nb) Tiefe-Höhe\nc) Länge-Breite\nd) Umgebung-Gegend',
       options: ['Äußerlichkeit-Innerlichkeit', 'Tiefe-Höhe', 'Länge-Breite', 'Umgebung-Gegend'],
       answer: 3
     },
     {
-      question: 'Welche Kombination passt nicht?',
+      question: 'Welche Kombination passt nicht?\nHinauf-Hinunter\nb) Draußen-im Freien\nc) Drinnen-Draußen\nd) Hinein-Hinaus',
       options: ['Hinauf-Hinunter', 'Draußen-im Freien', 'Drinnen-Draußen', 'Hinein-Hinaus'],
       answer: 1
     },
     {
-      question: 'Was passt nicht?',
+      question: 'Was passt nicht?\ndie Einwohnerzahl\nb) die Fläche\nc) die Wahl\nd) die Nachbarländer',
       options: ['die Einwohnerzahl', 'die Fläche', 'die Wahl', 'die Nachbarländer'],
       answer: 2
     },
     {
-      question: 'Was passt nicht?',
+      question: 'Was passt nicht?\nStabilität-Schwankung\nb) Anstieg-Wachstum\nc) Reduzierung-Vermehrung\nd) Senkung-Steigerung',
       options: ['Stabilität-Schwankung', 'Anstieg-Wachstum', 'Reduzierung-Vermehrung', 'Senkung-Steigerung'],
       answer: 1
     },
     {
-      question: 'Was passt nicht? Geld .............',
+      question: 'Was passt nicht nicht? Geld .............\nsparen\nb) ausgeben\nc) verbrauchen\nd) abheben',
       options: ['sparen', 'ausgeben', 'verbrauchen', 'abheben'],
       answer: 2
     },
     {
-      question: 'Was passt nicht? Geld .....',
+      question: 'Was passt nicht? Geld .....\nkaufen\nb) anlegen\nc) verdienen\nd) überweisen',
       options: ['kaufen', 'anlegen', 'verdienen', 'überweisen'],
       answer: 0
     },
     {
-      question: 'Was passt nicht? Medikamente .........',
+      question: 'Was passt nicht? Medikamente .........\nnehmen\nb) verschreiben\nc) heilen \td) schicken',
       options: ['nehmen', 'verschreiben', 'heilen', 'schicken'],
       answer: 3
     },
     {
-      question: 'Was passt nicht? Patienten ..........',
+      question: 'Was passt nicht? Patienten ..........\nuntersuchen\nb) suchen\nc) behandeln\td) überweisen',
       options: ['untersuchen', 'suchen', 'behandeln', 'überweisen'],
       answer: 1
     },
     {
-      question: 'Was passt? Maßnahmen .....',
+      question: 'Was passt? Maßnahmen .....\nbekommen\nb) nehmen\nc) sein\td) treffen',
       options: ['bekommen', 'nehmen', 'sein', 'treffen'],
       answer: 3
     },
     {
-      question: 'Was passt? Erfahrungen .....',
+      question: 'Was passt? Erfahrungen .....\nsammeln\nb) finden\nc) geben\td) nehmen',
       options: ['sammeln', 'finden', 'geben', 'nehmen'],
       answer: 0
     },
     {
-      question: 'Was gehört nicht zu einer Bewerbungsmappe?',
+      question: 'Was gehört nicht zu einer Bewerbungsmappe?\ndie Rechnung\nb) Zeugnisse und Bescheinigungen\nc) ein Foto\nd) ein Bewerbungsschreiben\ne) der Lebenslauf',
       options: ['die Rechnung', 'Zeugnisse und Bescheinigungen', 'ein Foto', 'ein Bewerbungsschreiben', 'der Lebenslauf'],
       answer: 0
     },
     {
-      question: 'Welchen Teil umfasst der Lebenslauf nicht?',
+      question: 'Welchen Teil umfasst der Lebenslauf nicht?\nBerufserfahrung\nb) Schulabschluss\nc) EDV-Kenntnisse\nd) Ausbildung der Kinder\ne) Sprachkenntnisse',
       options: ['Berufserfahrung', 'Schulabschluss', 'EDV-Kenntnisse', 'Ausbildung der Kinder', 'Sprachkenntnisse'],
       answer: 3
     },
@@ -1046,12 +1046,12 @@ const questions = {
       answer: 0
     },
     {
-      question: 'In der Mail an die Touristeninformation: Ich suche dringend eine günstige Unterkunft für meine Reise nach München. Können Sie ______ bitte kurz über die durchschnittlichen Zimmerpreise informieren?',
+      question: 'In der Mail an die Touristeninformation: Ich suche dringend eine günstige Unterkunft für meine Reise nach München. Können ______ bitte kurz über die durchschnittlichen Zimmerpreise informieren?',
       options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
       answer: 0
     },
     {
-      question: 'Im Restaurant: Entschuldigen Sie bitte! Meine Freundin und ich möchten gern etwas zum Essen bestellen. Können Sie ______ bitte eine Speisekarte bringen?',
+      question: 'Im Restaurant: Entschuldigen Sie bitte! Meine Freundin und ich möchten gern etwas zum Essen bestellen. Können ______ bitte eine Speisekarte bringen?',
       options: ['mich', 'uns', 'dir', 'ihnen', 'Ihnen', 'ihn', 'Sie'],
       answer: 1
     },
@@ -1226,6 +1226,106 @@ const questions = {
       question: 'Das war bestimmt eine tolle Party. Ich muss aber schnell los. Ich habe gleich ein Meeting und habe mich leider ______.',
       options: ['verspäten', 'verspätung', 'verspätet'],
       answer: 2
+    },
+    {
+      question: '….. Kleid findest du schöner?  - …..  rote hier.',
+      options: ['Welchen – Diesen', 'Welches – Dieses', 'Welche – Diese'],
+      answer: 1
+    },
+    {
+      question: 'Wir sind auf einer Insel und hier ….. keine Autos fahren.',
+      options: ['müssen', 'können', 'dürfen'],
+      answer: 2
+    },
+    {
+      question: 'Warum geht Tim nicht zur Schule? - Weil …. .',
+      options: ['krank er ist.', 'er krank ist.', 'er ist krank.'],
+      answer: 1
+    },
+    {
+      question: 'Heute regnet es. ___ können wir nicht draußen spielen.',
+      options: ['Deshalb', 'Denn', 'Aber'],
+      answer: 0
+    },
+    {
+      question: 'Claudia, hast du …. Notizbuch gesehen? -  Ja, es liegt … Regal.',
+      options: ['mein – im', 'meine – ins', 'mein – ins'],
+      answer: 0
+    },
+    {
+      question: 'Kommst du mit ins Kino? – Nein, ich kann diesmal ….. .',
+      options: ['nicht', 'kein', 'nie'],
+      answer: 0
+    },
+    {
+      question: 'Was ….. man hier alles machen?',
+      options: ['kannt', 'kann', 'könne'],
+      answer: 1
+    },
+    {
+      question: 'Kommt ihr heute? - Nein,  leider haben wir heute …. Zeit. …. morgen kommen wir gerne.',
+      options: ['keine - Aber', 'kein - Denn', 'keine – Weil'],
+      answer: 0
+    },
+    {
+      question: 'Kann mir jemand ein … und … Buch empfehlen?',
+      options: ['spannendes – fesselndes', 'langweiliges – uninteressantes', 'dünnes  - zerrissenes'],
+      answer: 0
+    },
+    {
+      question: 'Welcher Pullover gefällt dir am besten?  - Dieser … sieht gut aus.',
+      options: ['schwarzen', 'schwarze', 'schwarzes'],
+      answer: 1
+    },
+    {
+      question: 'Was wünscht du dir zu Weihnachten? - Ich wünsche … einen neuen Schal.',
+      options: ['mir', 'mich', 'meinen'],
+      answer: 0
+    },
+    {
+      question: 'Guten Tag! Mein Name ist Schneider. Ich möchte bitte mit ….. sprechen.',
+      options: ['Herr Fischer', 'Herrn Fischer', 'Herren Fischer'],
+      answer: 1
+    },
+    {
+      question: 'Seit wann leben Sie in Berlin? Seit  … Jahr.',
+      options: ['ein', 'einen', 'einem'],
+      answer: 2
+    },
+    {
+      question: 'Was macht er gern? - … .',
+      options: ['Er sieht fern gern .', 'Er sieht gern fern.', 'Er fernsehen gern.'],
+      answer: 1
+    },
+    {
+      question: 'Sylvester ist am …. Dezember.',
+      options: ['einunddreizigsten', 'einunddreißigsten', 'einsunddreizigsten'],
+      answer: 1
+    },
+    {
+      question: 'Mein Urlaub in den Alpen war super! – Schön, dass es … dort gefallen hat.',
+      options: ['dir', 'mir', 'ihm'],
+      answer: 0
+    },
+    {
+      question: 'Ich bin der Meinung, … du mitfahren solltest.',
+      options: ['dass', 'ob', 'wenn'],
+      answer: 0
+    },
+    {
+      question: 'Möchten Sie bestellen? – Ja, ich__________ ein Schnitzel und eine Cola.',
+      options: ['zahle', 'würde gern', 'hätte gern'],
+      answer: 2
+    },
+    {
+      question: 'Wann ist Vanessa geboren? -  …. ',
+      options: ['Am sechsten April.', 'Im sechsten April.', 'Um sechsten April.'],
+      answer: 0
+    },
+    {
+      question: 'Schmeckt dir die Pizza nicht? - …..',
+      options: ['Ja, sie schmeckt mir.', 'Doch, sie schmeckt mir.', 'Ich esse gerne Pizza.'],
+      answer: 1
     }
   ],
   B1: [
