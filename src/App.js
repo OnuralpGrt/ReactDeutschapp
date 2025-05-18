@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, Grid, Card, CardContent, CardMedia, AppBar, Toolbar, Button } from '@mui/material';
+import { Container, Typography, Grid, Card, CardContent, CardMedia } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import MultipleChoice from './MultipleChoice';
 import SatzeBilden from './SatzeBilden';
@@ -140,13 +140,6 @@ function App() {
 
   return (
     <div className="App">
-      <AppBar position="static" sx={{ backgroundColor: '#E65100' }}>
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            DeutschApp
-          </Typography>
-        </Toolbar>
-      </AppBar>
       {renderPage()}
     </div>
   );
