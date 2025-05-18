@@ -168,17 +168,19 @@ const exercises = {
     },
     {
       id: 3,
-      title: "Fragen und Antworten",
-      instruction: "Ordnen Sie die Antworten den Fragen zu.",
+      title: "Fragen und Antworten zum Thema Beruf",
+      instruction: "Beantworten Sie die Fragen mit den passenden Antworten.",
       type: "fill_in_the_blanks",
-      text: `1. Welche Vorteile bringen Fremdsprachen mit sich? - ________\n\n2. Aus welchen Gründen wollen Studierende nach dem Studium ins Ausland gehen? - ________\n\n3. Was müssen Studierende während des Studiums machen? - ________\n\n4. Wie lange dauert ein Semester? - ________\n\n5. Was fällt Ihnen in dieser Grafik auf? - ________\n\n6. Was versteht man unter Studienkolleg? - ________\n\nAntworten:\nA) In dieser Grafik fällt mir auf, dass die Zahl der Studierenden, die im Ausland studieren wollen, gesunken ist.\nB) Studierende müssen während des Studiums auch ein Praktikum machen.\nC) Fremdsprachen bringen die Karriere und Entwicklung der kognitiven Fähigkeiten mit sich.\nD) Studierende wollen nach dem Studium ins Ausland gehen, weil sie denken, dass Auslandserfahrung ihnen ermöglicht, leichter einen Arbeitsplatz zu finden und weil sie ihre Fremdsprache erweitern können.\nE) Unter Studienkolleg versteht man eine Institution, die 1 Jahr lang auf das Studium sprachlich und fachlich vorbereitet.\nF) Ein Semester dauert ca. vier Monate.`,
+      text: `1. Was machen Sie beruflich? - ________\n\n2. Wie lange arbeiten Sie schon in diesem Beruf? - ________\n\n3. Was gefällt Ihnen an Ihrer Arbeit? - ________\n\n4. Was sind die größten Herausforderungen? - ________\n\n5. Wie sieht Ihr typischer Arbeitstag aus? - ________\n\n6. Welche Qualifikationen braucht man für diesen Beruf? - ________\n\n7. Was sind Ihre Ziele für die Zukunft? - ________\n\n8. Wie wichtig ist Work-Life-Balance für Sie? - ________\n\nAntworten:\nA) Ich arbeite als Projektmanager in einer IT-Firma.\nB) Ich bin seit fünf Jahren in diesem Bereich tätig.\nC) Die Abwechslung und die Zusammenarbeit mit verschiedenen Teams.\nD) Die ständigen Deadlines und der Zeitdruck.\nE) Ich beginne mit Teammeetings, plane Projekte und koordiniere die Arbeit.\nF) Man braucht ein Studium in Informatik und Erfahrung im Projektmanagement.\nG) Ich möchte in Zukunft ein eigenes Team leiten.\nH) Sehr wichtig. Ich achte darauf, dass ich genug Zeit für Familie und Hobbys habe.`,
       blanks: [
+        { answer: "A" },
+        { answer: "B" },
         { answer: "C" },
         { answer: "D" },
-        { answer: "B" },
+        { answer: "E" },
         { answer: "F" },
-        { answer: "A" },
-        { answer: "E" }
+        { answer: "G" },
+        { answer: "H" }
       ]
     }
   ],
@@ -203,18 +205,18 @@ const exercises = {
     {
       id: 2,
       title: "Fragen und Antworten zum Thema Nachhaltigkeit",
-      instruction: "Ordnen Sie die Antworten den Fragen zu.",
+      instruction: "Beantworten Sie die Fragen mit den passenden Antworten.",
       type: "fill_in_the_blanks",
-      text: `a) Wie können Unternehmen eine nachhaltige Zukunft gestalten? - ________\n\nb) Welcher Beruf spielt eine entscheidende Rolle bei der Handhabung neuer Herausforderungen wie zum Beispiel Klimawandel oder Digitalisierung? - ________\n\nc) Bringt die Nachhaltigkeit nur ökologische Vorteile mit sich? - ________\n\nd) Was versteht man unter einer nachhaltigen Produktion? - ________\n\ne) Ist Online-Shopping umweltschädlicher als der Einkauf im Laden? - ________\n\nf) Welche Länder sind Vorreiter in Sachen Nachhaltigkeit? - ________\n\ng) Wieviel Prozent der globalen Bevölkerung interessieren sich für umweltfreundliche Themen? - ________\n\nh) Was hat die Großstadt Kopenhagen gemacht? - ________\n\nAntworten:\n1) Dänemark, Schweiz und Norwegen belegen die ersten drei Plätze.\n2) Das ist ein Fertigungsverfahren, das die Ressourcen schonend nutzt und dabei Umweltschäden minimiert, um nicht nur gegenwärtige Bedürfnisse zu befriedigen, sondern auch die Bedürfnisse zukünftiger Generationen nicht zu gefährden.\n3) Ja, weil zum Bsp. viele Waren zurückgeschickt werden.\n4) Weniger als die Hälfte der Menschen auf der Welt beschäftigt sich mit dem Thema Umweltfreundlichkeit.\n5) Die Entwicklung von wiederverwendbaren Produkten und die Minimierung von Abfällen tragen zur Nachhaltigkeit bei.\n6) Sie hat so viele Fahrradwege ausgebaut, dass auf den Straßen mehr Fahrräder als Autos fahren.\n7) Ingenieure und Ingenieurinnen.\n8) Mit einer guten Strategie kann man auch ökonomisch davon profitieren.`,
+      text: `1. Was verstehen Sie unter nachhaltiger Entwicklung? - ________\n\n2. Welche Rolle spielt der Einzelne beim Umweltschutz? - ________\n\n3. Wie können Unternehmen nachhaltiger werden? - ________\n\n4. Was sind die größten Herausforderungen beim Klimaschutz? - ________\n\n5. Wie wichtig ist Bildung für nachhaltige Entwicklung? - ________\n\n6. Welche Maßnahmen sind besonders effektiv? - ________\n\n7. Wie kann man Nachhaltigkeit im Alltag umsetzen? - ________\n\n8. Was sind die Vorteile einer nachhaltigen Lebensweise? - ________\n\nAntworten:\nA) Nachhaltige Entwicklung bedeutet, die Bedürfnisse der Gegenwart zu befriedigen, ohne die Möglichkeiten zukünftiger Generationen zu gefährden.\nB) Jeder Einzelne kann durch sein Konsumverhalten und seinen Lebensstil einen wichtigen Beitrag leisten.\nC) Unternehmen können durch umweltfreundliche Produktionsprozesse und soziale Verantwortung nachhaltiger werden.\nD) Die größten Herausforderungen sind die globale Koordination und die Umstellung der Wirtschaft.\nE) Bildung ist entscheidend, um das Bewusstsein für Nachhaltigkeit zu schärfen und Handlungskompetenz zu entwickeln.\nF) Besonders effektiv sind Maßnahmen zur Reduzierung des CO2-Ausstoßes und der Förderung erneuerbarer Energien.\nG) Im Alltag kann man durch bewussten Konsum, Mülltrennung und energiesparendes Verhalten nachhaltig leben.\nH) Eine nachhaltige Lebensweise schützt die Umwelt, spart Ressourcen und verbessert die Lebensqualität.`,
       blanks: [
-        { answer: "5" },
-        { answer: "7" },
-        { answer: "8" },
-        { answer: "2" },
-        { answer: "3" },
-        { answer: "1" },
-        { answer: "4" },
-        { answer: "6" }
+        { answer: "A" },
+        { answer: "B" },
+        { answer: "C" },
+        { answer: "D" },
+        { answer: "E" },
+        { answer: "F" },
+        { answer: "G" },
+        { answer: "H" }
       ]
     },
     {
