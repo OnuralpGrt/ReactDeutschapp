@@ -1094,7 +1094,7 @@ Letztlich wird kritisiert, dass die heutige Gleichstellungspolitik vor allem Fra
           hint: "Eşitlik politikasıyla ilgili metinde sorulan temel soruyu bulun."
         },
         {
-          question: "Was versteht man unter „emanzipativer Gleichberechtigung" laut dem Text?",
+          question: "Was versteht man unter 'emanzipativer Gleichberechtigung' laut dem Text?",
           options: [
             "Die Förderung von Frauen in wirtschaftsnahen Bereichen",
             "Gleiche Möglichkeiten zur selbstbestimmten Lebensgestaltung für alle",
