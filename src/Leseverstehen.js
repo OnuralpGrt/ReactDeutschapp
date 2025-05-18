@@ -462,6 +462,248 @@ Meine Freunde sagen, ich lebe zu gesund, aber ich fühle mich gut dabei.`,
         }
       ]
     }
+  ],
+  B1: [
+    {
+      id: 1,
+      title: "Umweltbewusstsein",
+      text: `Umweltbewusstsein ist heute wichtiger denn je. Viele Menschen versuchen, ihren ökologischen Fußabdruck zu verringern. Sie kaufen regionale Produkte, nutzen öffentliche Verkehrsmittel und trennen ihren Müll. Doch reicht das aus?
+
+Ein wichtiger Aspekt ist der Energieverbrauch. Durch den Wechsel zu erneuerbaren Energien können wir viel CO2 einsparen. Solaranlagen auf dem Dach oder Windräder in der Nähe sind gute Alternativen zu fossilen Brennstoffen.
+
+Auch im Alltag können wir viel tun: LED-Lampen statt Glühbirnen verwenden, Wasser sparen und weniger Fleisch essen. Jeder kleine Beitrag zählt.`,
+      type: "open_ended_quiz",
+      questions: [
+        {
+          question: "Warum ist Umweltbewusstsein heute besonders wichtig?",
+          answer: "Umweltbewusstsein ist heute wichtiger denn je, weil wir unseren ökologischen Fußabdruck verringern müssen.",
+          hint: "Metnin başlangıcına bakın."
+        },
+        {
+          question: "Welche Maßnahmen ergreifen viele Menschen für die Umwelt?",
+          answer: "Viele Menschen kaufen regionale Produkte, nutzen öffentliche Verkehrsmittel und trennen ihren Müll.",
+          hint: "İnsanların çevre için yaptığı şeyleri bulun."
+        },
+        {
+          question: "Wie können wir Energie sparen?",
+          answer: "Wir können durch den Wechsel zu erneuerbaren Energien wie Solaranlagen und Windrädern Energie sparen.",
+          hint: "Enerji tasarrufu yöntemlerini bulun."
+        },
+        {
+          question: "Welche alltäglichen Maßnahmen werden im Text erwähnt?",
+          answer: "Im Text werden LED-Lampen verwenden, Wasser sparen und weniger Fleisch essen als alltägliche Maßnahmen erwähnt.",
+          hint: "Günlük hayatta yapılabilecek şeyleri bulun."
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: "Digitalisierung",
+      text: `Die Digitalisierung verändert unsere Gesellschaft grundlegend. Smartphones, Tablets und Computer sind aus unserem Alltag nicht mehr wegzudenken. Doch diese Entwicklung hat nicht nur Vorteile.
+
+Einerseits erleichtert die Digitalisierung viele Prozesse. Wir können von überall aus arbeiten, schnell Informationen finden und mit Menschen auf der ganzen Welt kommunizieren. Andererseits gibt es auch Risiken: Datenschutzprobleme, Cybermobbing und die Abhängigkeit von Technologie.
+
+Es ist wichtig, einen gesunden Umgang mit digitalen Medien zu finden. Dazu gehört auch, regelmäßig digitale Auszeiten zu nehmen und sich bewusst zu machen, wie viel Zeit man online verbringt.`,
+      type: "richtig_falsch_quiz",
+      questions: [
+        {
+          question: "Die Digitalisierung hat nur positive Auswirkungen.",
+          answer: "falsch",
+          hint: "Dijitalleşmenin etkilerini kontrol edin."
+        },
+        {
+          question: "Smartphones sind heute ein wichtiger Teil unseres Alltags.",
+          answer: "richtig",
+          hint: "Günlük hayatta teknolojinin rolünü kontrol edin."
+        },
+        {
+          question: "Die Digitalisierung ermöglicht es uns, von überall zu arbeiten.",
+          answer: "richtig",
+          hint: "Çalışma esnekliğini kontrol edin."
+        },
+        {
+          question: "Digitale Auszeiten sind nicht wichtig.",
+          answer: "falsch",
+          hint: "Dijital molaların önemini kontrol edin."
+        }
+      ]
+    },
+    {
+      id: 3,
+      title: "Gesundheit im Beruf",
+      text: `Die Gesundheit am Arbeitsplatz wird immer wichtiger. Viele Unternehmen bieten ihren Mitarbeitern Gesundheitsprogramme an. Dazu gehören:
+
+- Regelmäßige Gesundheitschecks
+- Sportangebote im Unternehmen
+- Stressmanagement-Kurse
+- Ergonomische Arbeitsplätze
+- Flexible Arbeitszeiten
+
+Studien zeigen, dass gesunde Mitarbeiter produktiver sind und seltener krank werden. Deshalb investieren immer mehr Firmen in die Gesundheit ihrer Angestellten.`,
+      tasks: [
+        {
+          type: "multiple_choice",
+          title: "Aufgabe 1: Lesen Sie den Text. Was erfahren Sie über Gesundheitsprogramme? (Mehrere Antworten sind möglich)",
+          questions: [
+            {
+              question: "Gesundheitsprogramme sind nur für kranke Mitarbeiter.",
+              answer: false,
+              hint: "Programların hedef kitlesini kontrol edin."
+            },
+            {
+              question: "Flexible Arbeitszeiten sind Teil der Gesundheitsprogramme.",
+              answer: true,
+              hint: "Programların içeriğini kontrol edin."
+            },
+            {
+              question: "Gesunde Mitarbeiter sind produktiver.",
+              answer: true,
+              hint: "Sağlıklı çalışanların performansını kontrol edin."
+            },
+            {
+              question: "Nur große Unternehmen bieten Gesundheitsprogramme an.",
+              answer: false,
+              hint: "Programların yaygınlığını kontrol edin."
+            }
+          ]
+        },
+        {
+          type: "open_ended",
+          title: "Aufgabe 2: Beantworten Sie die Fragen in vollständigen Sätzen.",
+          questions: [
+            {
+              question: "Welche Gesundheitsprogramme werden im Text erwähnt?",
+              answer: "Im Text werden Gesundheitschecks, Sportangebote, Stressmanagement-Kurse, ergonomische Arbeitsplätze und flexible Arbeitszeiten erwähnt.",
+              hint: "Programların listesini bulun."
+            },
+            {
+              question: "Warum investieren Firmen in die Gesundheit ihrer Mitarbeiter?",
+              answer: "Firmen investieren in die Gesundheit ihrer Mitarbeiter, weil gesunde Mitarbeiter produktiver sind und seltener krank werden.",
+              hint: "Yatırım nedenlerini bulun."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  B2: [
+    {
+      id: 1,
+      title: "Künstliche Intelligenz",
+      text: `Die Entwicklung der künstlichen Intelligenz (KI) schreitet rasant voran. KI-Systeme können bereits komplexe Aufgaben lösen, die früher nur Menschen vorbehalten waren. Doch diese Entwicklung wirft auch wichtige ethische Fragen auf.
+
+Einerseits bietet KI große Chancen: Sie kann bei der medizinischen Diagnose helfen, den Verkehr optimieren und sogar kreative Aufgaben übernehmen. Andererseits gibt es Bedenken bezüglich Datenschutz, Arbeitsplatzverlust und der Kontrolle über KI-Systeme.
+
+Experten fordern eine verantwortungsvolle Entwicklung und Nutzung von KI. Es müssen klare Regeln und Grenzen festgelegt werden, um die Technologie zum Wohle der Menschheit einzusetzen.`,
+      type: "open_ended_quiz",
+      questions: [
+        {
+          question: "Welche Aufgaben können KI-Systeme heute übernehmen?",
+          answer: "KI-Systeme können heute komplexe Aufgaben wie medizinische Diagnosen, Verkehrsoptimierung und kreative Aufgaben übernehmen.",
+          hint: "Yapay zekanın yapabildiği işleri bulun."
+        },
+        {
+          question: "Welche Bedenken gibt es bezüglich KI?",
+          answer: "Es gibt Bedenken bezüglich Datenschutz, Arbeitsplatzverlust und der Kontrolle über KI-Systeme.",
+          hint: "Yapay zeka ile ilgili endişeleri bulun."
+        },
+        {
+          question: "Was fordern Experten für die Entwicklung von KI?",
+          answer: "Experten fordern eine verantwortungsvolle Entwicklung und Nutzung von KI mit klaren Regeln und Grenzen.",
+          hint: "Uzmanların taleplerini bulun."
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: "Globalisierung",
+      text: `Die Globalisierung hat unsere Welt grundlegend verändert. Durch moderne Kommunikationstechnologien und Transportmöglichkeiten ist die Welt enger zusammengerückt. Doch diese Entwicklung hat nicht nur positive Auswirkungen.
+
+Einerseits profitieren wir von einem weltweiten Warenaustausch, kulturellem Austausch und internationaler Zusammenarbeit. Andererseits gibt es auch negative Folgen: Umweltprobleme, soziale Ungleichheit und kulturelle Konflikte.
+
+Es ist wichtig, die Globalisierung nachhaltig zu gestalten. Dazu gehören faire Handelsbeziehungen, Umweltschutz und die Achtung kultureller Vielfalt.`,
+      type: "richtig_falsch_quiz",
+      questions: [
+        {
+          question: "Die Globalisierung hat nur positive Auswirkungen.",
+          answer: "falsch",
+          hint: "Küreselleşmenin etkilerini kontrol edin."
+        },
+        {
+          question: "Moderne Technologien haben die Welt enger zusammengebracht.",
+          answer: "richtig",
+          hint: "Teknolojinin etkisini kontrol edin."
+        },
+        {
+          question: "Faire Handelsbeziehungen sind für eine nachhaltige Globalisierung wichtig.",
+          answer: "richtig",
+          hint: "Sürdürülebilir küreselleşme için gerekli olanları kontrol edin."
+        },
+        {
+          question: "Kulturelle Vielfalt spielt bei der Globalisierung keine Rolle.",
+          answer: "falsch",
+          hint: "Kültürel çeşitliliğin önemini kontrol edin."
+        }
+      ]
+    },
+    {
+      id: 3,
+      title: "Bildung der Zukunft",
+      text: `Die Bildung steht vor großen Herausforderungen. Durch die Digitalisierung und den raschen Wandel der Arbeitswelt müssen sich Bildungssysteme anpassen. Experten fordern eine grundlegende Reform.
+
+Wichtige Aspekte sind:
+- Digitale Kompetenzen
+- Kritisches Denken
+- Kreativität
+- Teamfähigkeit
+- Lebenslanges Lernen
+
+Traditionelle Unterrichtsmethoden werden durch neue Konzepte ergänzt. Online-Learning, Projektarbeit und interaktive Lernmethoden gewinnen an Bedeutung.`,
+      tasks: [
+        {
+          type: "multiple_choice",
+          title: "Aufgabe 1: Lesen Sie den Text. Was erfahren Sie über die Bildung der Zukunft? (Mehrere Antworten sind möglich)",
+          questions: [
+            {
+              question: "Traditionelle Unterrichtsmethoden werden vollständig abgeschafft.",
+              answer: false,
+              hint: "Geleneksel öğretim yöntemlerinin geleceğini kontrol edin."
+            },
+            {
+              question: "Digitale Kompetenzen werden immer wichtiger.",
+              answer: true,
+              hint: "Dijital becerilerin önemini kontrol edin."
+            },
+            {
+              question: "Lebenslanges Lernen ist ein wichtiger Aspekt.",
+              answer: true,
+              hint: "Sürekli öğrenmenin önemini kontrol edin."
+            },
+            {
+              question: "Online-Learning spielt keine Rolle in der Zukunft.",
+              answer: false,
+              hint: "Online öğrenmenin önemini kontrol edin."
+            }
+          ]
+        },
+        {
+          type: "open_ended",
+          title: "Aufgabe 2: Beantworten Sie die Fragen in vollständigen Sätzen.",
+          questions: [
+            {
+              question: "Welche Kompetenzen werden in der Zukunft wichtig sein?",
+              answer: "In der Zukunft werden digitale Kompetenzen, kritisches Denken, Kreativität, Teamfähigkeit und lebenslanges Lernen wichtig sein.",
+              hint: "Gelecekte önemli olacak becerileri bulun."
+            },
+            {
+              question: "Warum müssen sich Bildungssysteme anpassen?",
+              answer: "Bildungssysteme müssen sich wegen der Digitalisierung und des raschen Wandels der Arbeitswelt anpassen.",
+              hint: "Eğitim sistemlerinin neden değişmesi gerektiğini bulun."
+            }
+          ]
+        }
+      ]
+    }
   ]
 };
 

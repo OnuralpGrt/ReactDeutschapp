@@ -3,205 +3,205 @@ import { Box, Typography, Radio, RadioGroup, FormControlLabel, Button, Paper, Ta
 
 const questions = {
   A1: [
-    {
-      question: 'Guten Tag, ich bin Tim Schneider. Und wie _________ Sie?\n▲ Louis Moreau.',
-      options: ['heißt', 'heißen', 'sind'],
-      answer: 1
-    },
-    {
-      question: 'Was _________ du?\n▲ Deutsch und ein bisschen Englisch.',
-      options: ['spricht', 'sprechst', 'sprichst'],
-      answer: 2
-    },
-    {
-      question: '_________ kommen Sie, Herr Dupont? ▲ _________ Frankreich.',
-      options: ['Wo ... In', 'Woher ... Aus', 'Woher ... Im'],
-      answer: 1
-    },
-    {
-      question: '_________ du Kinder? ▲ Ja, zwei.',
-      options: ['Haben', 'Habt', 'Hast'],
-      answer: 2
-    },
-    {
-      question: 'Das _________ meine Schwester und das _________ meine Eltern.',
-      options: ['ist ... sind', 'ist ... ist', 'sind ... ist'],
-      answer: 0
-    },
-    {
-      question: 'Das sind Claire und Charles. _________ leben in der Schweiz.',
-      options: ['Wir', 'Sie', 'Ihr'],
-      answer: 1
-    },
-    {
-      question: 'Wo _________ ihr? ▲ In Berlin.',
-      options: ['kommt', 'liebt', 'wohnt'],
-      answer: 2
-    },
-    {
-      question: 'Mama, ist das eine Tomate? ▲ Nein. Das ist doch _________ Tomate, das ist eine Orange.',
-      options: ['nicht', 'keine', 'kein'],
-      answer: 1
-    },
-    {
-      question: 'Möchten Sie sonst noch etwas? ▲ Ja, ich brauche noch _________. Was kostet ein Kilo?',
-      options: ['Äpfel', 'Apfeln', 'Äpfeln'],
-      answer: 0
-    },
-    {
-      question: '_________ du auch gern Pizza?',
-      options: ['Esst', 'Essen', 'Isst'],
-      answer: 2
-    },
-    {
-      question: 'Wie gefällt Ihnen der Tisch hier? ▲ Gut, _________ ist sehr schön.',
-      options: ['sie', 'es', 'er'],
-      answer: 1
-    },
-    {
-      question: 'Das Wohnzimmer ist sehr klein. ▲ Was? Das Zimmer ist doch _____ klein. Es ist groß!',
-      options: ['nicht', 'kein', 'keine'],
-      answer: 0
-    },
-    {
-      question: 'Ist die Wohnung teuer? ▲ Nein, sie ist sehr _________.',
-      options: ['breit', 'neu', 'billig'],
-      answer: 2
-    },
-    {
-      question: 'Wie spät ist es? ▲ Es ist 13.25 Uhr',
-      options: ['fünf nach halb eins', 'fünfundzwanzig nach dreizehn', 'fünf vor halb zwei'],
-      answer: 2
-    },
-    {
-      question: 'Was machst du gern? ▲ Ich _________.',
-      options: ['fernsehe', 'sehe gern fern', 'sehen fern gern'],
-      answer: 1
-    },
-    {
-      question: 'Wann ist die Praxis geöffnet? ▲ _______ 8 Uhr 30 ________ 16 Uhr 30.',
-      options: ['Von ... bis', 'Um ... um', 'Bis ... von'],
-      answer: 0
-    },
-    {
-      question: 'Was machst du _______ Freitag? ▲ Da habe ich ______ 15 Uhr einen Englischkurs.',
-      options: ['bis ... am', 'am ... um', 'in ... um'],
-      answer: 1
-    },
-    {
-      question: 'Hast du _________ Lieblingsfilm? ▲ Ja, Metropolis. Der Film ist super!',
-      options: ['ein', 'der', 'einen'],
-      answer: 0
-    },
-    {
-      question: 'Wie findest du die Lampe? ▲ Schön. Aber ich brauche _________ Lampe.',
-      options: ['keine', 'nicht', 'keinen'],
-      answer: 0
-    },
-    {
-      question: 'Was ist dein Hobby? ▲ Lesen. _________ auch gern?',
-      options: ['Liest du', 'Lest du', 'Lesest du'],
-      answer: 0
-    },
-    {
-      question: 'Hast du den Wein nicht dabei? ▲ _________! Hier ist er.',
-      options: ['Ja', 'Nein', 'Doch'],
-      answer: 2
-    },
-    {
-      question: 'Die Suppe schmeckt nicht. Ich _________ einfach nicht kochen.',
-      options: ['können', 'könne', 'kann'],
-      answer: 2
-    },
-    {
-      question: 'Die Wochenendkurse hier sind sehr interessant. ▲ Ich _________ aber am Wochenende keinen Kurs ___________.',
-      options: ['wolle ... machen', 'will … machen', 'möchten … machen'],
-      answer: 1
-    },
-    {
-      question: 'Was _________ du am Sonntag gemacht? ▲ Nichts.',
-      options: ['bist', 'kannst', 'hast'],
-      answer: 2
-    },
-    {
-      question: 'Ich bin am Wochenende zu Marco _________.',
-      options: ['gegehen', 'gekommt', 'gefahren'],
-      answer: 2
-    },
-    {
-      question: 'Was sind Sie von Beruf? ▲ Ich arbeite _________ Journalist.',
-      options: ['als', 'bei', 'in'],
-      answer: 0
-    },
-    {
-      question: 'Wir gehen Fußball spielen. ▲_________ du __________?',
-      options: ['Rufst … an', 'Kommst … mit', 'Räumst … auf'],
-      answer: 1
-    },
-    {
-      question: 'Tim hat Lara im Deutschkurs _________.',
-      options: ['gekennenlernt', 'kennengelernen', 'kennengelernt'],
-      answer: 2
-    },
-    {
-      question: 'Wie heißt das Partizip II von "sprechen"?',
-      options: ['gesprechen', 'gesprecht', 'gesprochen'],
-      answer: 2
-    },
-    {
-      question: 'Die Sonne ________.',
-      options: ['schneit', 'scheint', 'regnet'],
-      answer: 1
-    },
-    {
-      question: 'Es sind nur 3 Grad. Es ist ________.',
-      options: ['kalt', 'warm', 'heiß'],
-      answer: 0
-    },
-    {
-      question: 'Wie viel Uhr ist es? ▲Es ist 18.15 Uhr.',
-      options: ['sechs Uhr fünfzehn', 'Viertel nach achtzehn', 'achtzehn Uhr fünfzehn'],
-      answer: 2
-    },
-    {
-      question: 'Wie viel Uhr ist es? ▲Es ist 19.58 Uhr.',
-      options: ['Es ist zwei vor zwanzig', 'Es ist kurz vor acht', 'Es ist kurz nach acht'],
-      answer: 0
-    },
-    {
-      question: 'Wie heißt das Gegenteil von "dunkel"?',
-      options: ['groß', 'hell', 'alt'],
-      answer: 1
-    },
-    {
-      question: 'Das ist Sofia und das ist ________ Vater Walter.',
-      options: ['ihr', 'sein', 'mein'],
-      answer: 0
-    },
-    {
-      question: 'Das ist Tim und das ist ________ Freundin Lara.',
-      options: ['deine', 'seine', 'ihre'],
-      answer: 1
-    },
-    {
-      question: 'Frau Baumann, ist das ________ Schwester?',
-      options: ['ihre', 'deine', 'Ihre'],
-      answer: 2
-    },
-    {
-      question: 'Du studierst nicht, oder?   ► _________, ich studiere Biologie.',
-      options: ['Ja', 'Doch', 'Nein'],
-      answer: 1
-    },
-    {
-      question: 'Ich habe __________ Laptop, aber __________ Handy.',
-      options: ['einen / keinen', 'kein / ein', 'keinen / ein'],
-      answer: 2
-    },
-    {
-      question: 'Was hätten Sie gern? ► Ein Stück ___________ bitte.',
-      options: ['Kuchen', 'Suppe', 'Tee'],
-      answer: 0
+  {
+    question: 'Guten Tag, ich bin Tim Schneider. Und wie _________ Sie?\n▲ Louis Moreau.',
+    options: ['heißt', 'heißen', 'sind'],
+    answer: 1
+  },
+  {
+    question: 'Was _________ du?\n▲ Deutsch und ein bisschen Englisch.',
+    options: ['spricht', 'sprechst', 'sprichst'],
+    answer: 2
+  },
+  {
+    question: '_________ kommen Sie, Herr Dupont? ▲ _________ Frankreich.',
+    options: ['Wo ... In', 'Woher ... Aus', 'Woher ... Im'],
+    answer: 1
+  },
+  {
+    question: '_________ du Kinder? ▲ Ja, zwei.',
+    options: ['Haben', 'Habt', 'Hast'],
+    answer: 2
+  },
+  {
+    question: 'Das _________ meine Schwester und das _________ meine Eltern.',
+    options: ['ist ... sind', 'ist ... ist', 'sind ... ist'],
+    answer: 0
+  },
+  {
+    question: 'Das sind Claire und Charles. _________ leben in der Schweiz.',
+    options: ['Wir', 'Sie', 'Ihr'],
+    answer: 1
+  },
+  {
+    question: 'Wo _________ ihr? ▲ In Berlin.',
+    options: ['kommt', 'liebt', 'wohnt'],
+    answer: 2
+  },
+  {
+    question: 'Mama, ist das eine Tomate? ▲ Nein. Das ist doch _________ Tomate, das ist eine Orange.',
+    options: ['nicht', 'keine', 'kein'],
+    answer: 1
+  },
+  {
+    question: 'Möchten Sie sonst noch etwas? ▲ Ja, ich brauche noch _________. Was kostet ein Kilo?',
+    options: ['Äpfel', 'Apfeln', 'Äpfeln'],
+    answer: 0
+  },
+  {
+    question: '_________ du auch gern Pizza?',
+    options: ['Esst', 'Essen', 'Isst'],
+    answer: 2
+  },
+  {
+    question: 'Wie gefällt Ihnen der Tisch hier? ▲ Gut, _________ ist sehr schön.',
+    options: ['sie', 'es', 'er'],
+    answer: 1
+  },
+  {
+    question: 'Das Wohnzimmer ist sehr klein. ▲ Was? Das Zimmer ist doch _____ klein. Es ist groß!',
+    options: ['nicht', 'kein', 'keine'],
+    answer: 0
+  },
+  {
+    question: 'Ist die Wohnung teuer? ▲ Nein, sie ist sehr _________.',
+    options: ['breit', 'neu', 'billig'],
+    answer: 2
+  },
+  {
+    question: 'Wie spät ist es? ▲ Es ist 13.25 Uhr',
+    options: ['fünf nach halb eins', 'fünfundzwanzig nach dreizehn', 'fünf vor halb zwei'],
+    answer: 2
+  },
+  {
+    question: 'Was machst du gern? ▲ Ich _________.',
+    options: ['fernsehe', 'sehe gern fern', 'sehen fern gern'],
+    answer: 1
+  },
+  {
+    question: 'Wann ist die Praxis geöffnet? ▲ _______ 8 Uhr 30 ________ 16 Uhr 30.',
+    options: ['Von ... bis', 'Um ... um', 'Bis ... von'],
+    answer: 0
+  },
+  {
+    question: 'Was machst du _______ Freitag? ▲ Da habe ich ______ 15 Uhr einen Englischkurs.',
+    options: ['bis ... am', 'am ... um', 'in ... um'],
+    answer: 1
+  },
+  {
+    question: 'Hast du _________ Lieblingsfilm? ▲ Ja, Metropolis. Der Film ist super!',
+    options: ['ein', 'der', 'einen'],
+    answer: 0
+  },
+  {
+    question: 'Wie findest du die Lampe? ▲ Schön. Aber ich brauche _________ Lampe.',
+    options: ['keine', 'nicht', 'keinen'],
+    answer: 0
+  },
+  {
+    question: 'Was ist dein Hobby? ▲ Lesen. _________ auch gern?',
+    options: ['Liest du', 'Lest du', 'Lesest du'],
+    answer: 0
+  },
+  {
+    question: 'Hast du den Wein nicht dabei? ▲ _________! Hier ist er.',
+    options: ['Ja', 'Nein', 'Doch'],
+    answer: 2
+  },
+  {
+    question: 'Die Suppe schmeckt nicht. Ich _________ einfach nicht kochen.',
+    options: ['können', 'könne', 'kann'],
+    answer: 2
+  },
+  {
+    question: 'Die Wochenendkurse hier sind sehr interessant. ▲ Ich _________ aber am Wochenende keinen Kurs ___________.',
+    options: ['wolle ... machen', 'will … machen', 'möchten … machen'],
+    answer: 1
+  },
+  {
+    question: 'Was _________ du am Sonntag gemacht? ▲ Nichts.',
+    options: ['bist', 'kannst', 'hast'],
+    answer: 2
+  },
+  {
+    question: 'Ich bin am Wochenende zu Marco _________.',
+    options: ['gegehen', 'gekommt', 'gefahren'],
+    answer: 2
+  },
+  {
+    question: 'Was sind Sie von Beruf? ▲ Ich arbeite _________ Journalist.',
+    options: ['als', 'bei', 'in'],
+    answer: 0
+  },
+  {
+    question: 'Wir gehen Fußball spielen. ▲_________ du __________?',
+    options: ['Rufst … an', 'Kommst … mit', 'Räumst … auf'],
+    answer: 1
+  },
+  {
+    question: 'Tim hat Lara im Deutschkurs _________.',
+    options: ['gekennenlernt', 'kennengelernen', 'kennengelernt'],
+    answer: 2
+  },
+  {
+    question: 'Wie heißt das Partizip II von "sprechen"?',
+    options: ['gesprechen', 'gesprecht', 'gesprochen'],
+    answer: 2
+  },
+  {
+    question: 'Die Sonne ________.',
+    options: ['schneit', 'scheint', 'regnet'],
+    answer: 1
+  },
+  {
+    question: 'Es sind nur 3 Grad. Es ist ________.',
+    options: ['kalt', 'warm', 'heiß'],
+    answer: 0
+  },
+  {
+    question: 'Wie viel Uhr ist es? ▲Es ist 18.15 Uhr.',
+    options: ['sechs Uhr fünfzehn', 'Viertel nach achtzehn', 'achtzehn Uhr fünfzehn'],
+    answer: 2
+  },
+  {
+    question: 'Wie viel Uhr ist es? ▲Es ist 19.58 Uhr.',
+    options: ['Es ist zwei vor zwanzig', 'Es ist kurz vor acht', 'Es ist kurz nach acht'],
+    answer: 0
+  },
+  {
+    question: 'Wie heißt das Gegenteil von "dunkel"?',
+    options: ['groß', 'hell', 'alt'],
+    answer: 1
+  },
+  {
+    question: 'Das ist Sofia und das ist ________ Vater Walter.',
+    options: ['ihr', 'sein', 'mein'],
+    answer: 0
+  },
+  {
+    question: 'Das ist Tim und das ist ________ Freundin Lara.',
+    options: ['deine', 'seine', 'ihre'],
+    answer: 1
+  },
+  {
+    question: 'Frau Baumann, ist das ________ Schwester?',
+    options: ['ihre', 'deine', 'Ihre'],
+    answer: 2
+  },
+  {
+    question: 'Du studierst nicht, oder?   ► _________, ich studiere Biologie.',
+    options: ['Ja', 'Doch', 'Nein'],
+    answer: 1
+  },
+  {
+    question: 'Ich habe __________ Laptop, aber __________ Handy.',
+    options: ['einen / keinen', 'kein / ein', 'keinen / ein'],
+    answer: 2
+  },
+  {
+    question: 'Was hätten Sie gern? ► Ein Stück ___________ bitte.',
+    options: ['Kuchen', 'Suppe', 'Tee'],
+    answer: 0
     },
     {
       question: 'Ich _____ 20 Jahre alt.',
