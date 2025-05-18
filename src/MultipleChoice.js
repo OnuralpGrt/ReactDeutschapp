@@ -1077,10 +1077,248 @@ const questions = {
     }
   ],
   A2: [
-    // A2 seviyesi soruları
+    {
+      question: 'Hi, Lisa. Wie geht\'s? Sag mal, was _____ los gestern Abend bei dir zu Hause?',
+      options: ['hatte', 'ist', 'war', 'hat'],
+      answer: 2
+    },
+    {
+      question: '______ du vielleicht eine Party zu Hause?',
+      options: ['bist', 'hattest', 'hast', 'war'],
+      answer: 1
+    },
+    {
+      question: 'Was ______ ihr denn ______?',
+      options: ['habt ...... gefeiert', 'hast ….gefeiert'],
+      answer: 0
+    },
+    {
+      question: '______ gestern dein Geburtstag?',
+      options: ['bist', 'ist', 'hatte', 'war'],
+      answer: 3
+    },
+    {
+      question: 'Entschuldige bitte! Das habe ich nicht ______. Herzlichen Glückwunsch!',
+      options: ['gewusst', 'gewisst'],
+      answer: 0
+    },
+    {
+      question: 'Warum hast du mich nicht ______?',
+      options: ['einladen', 'eingeladet', 'eingeladen'],
+      answer: 2
+    },
+    {
+      question: 'Ach, du ______ mich dreimal ______. Wann?',
+      options: ['hast ....... angeruft', 'hast angerufen'],
+      answer: 1
+    },
+    {
+      question: 'Komisch! Ich habe mein Handy gar nicht ______.',
+      options: ['gehört', 'gehören'],
+      answer: 0
+    },
+    {
+      question: 'Schade, dass du mich telefonisch nicht ______ hast. :(',
+      options: ['geerreicht', 'erreicht', 'erreicht'],
+      answer: 1
+    },
+    {
+      question: 'Was ______ du für deine Gäste ______? Nudeln?',
+      options: ['hast ....... gekocht', 'hast …. gekochen'],
+      answer: 0
+    },
+    {
+      question: '______ ihr nur Nudeln ______? Und keine Vorspeise?',
+      options: ['habt …… gegessen', 'habt …. gegesst', 'hat ….. essen'],
+      answer: 0
+    },
+    {
+      question: 'Was ______ ihr dazu ______?',
+      options: ['habt .......... getrinkt', 'habt …… getrunken'],
+      answer: 1
+    },
+    {
+      question: '______ du deine Geburtstagstorte selbst ______?',
+      options: ['hast …..  backen', 'hast …. gebacken'],
+      answer: 1
+    },
+    {
+      question: 'Wie hat die Torte ______?',
+      options: ['geschmeckt', 'geschmecken', 'geschmackt'],
+      answer: 0
+    },
+    {
+      question: '______ kein Stück für mich übrig ______? Ach wie schade! :(',
+      options: ['hat ….. gebleibt', 'ist …. geblieben', 'ist ….. gebleiben'],
+      answer: 1
+    },
+    {
+      question: 'Wer ______ zur Party ______?',
+      options: ['ist .... gekommt', 'hat ….. gekommt', 'ist ….. gekommen'],
+      answer: 2
+    },
+    {
+      question: '______ Javier aus der Firma auch dabei? Du fragst jetzt, woher ich ihn kenne. :)',
+      options: ['hat', 'ist', 'war'],
+      answer: 2
+    },
+    {
+      question: 'Wir ______ uns vor zwei Jahren im Sprachkurs ______.',
+      options: ['haben ..... gekennlernt', 'haben ……. kennengelernt', 'haben …. kennenlernte'],
+      answer: 1
+    },
+    {
+      question: 'Er ______ damals mein Tandempartner.',
+      options: ['war', 'ist', 'hat', 'hatte'],
+      answer: 0
+    },
+    {
+      question: 'Er ______ mit mir Spanisch ______.',
+      options: ['hat ...... gesprecht', 'hat …. gesprochen'],
+      answer: 1
+    },
+    {
+      question: 'Und ich ______ mit ihm auf Deutsch ______.',
+      options: ['hat ...... gereden', 'habe ….. geredet'],
+      answer: 1
+    },
+    {
+      question: 'Wir ______ uns auch viel ______.',
+      options: ['hat ........ geschreibt', 'haben …. geschrieben', 'haben ….. geschreiben'],
+      answer: 1
+    },
+    {
+      question: 'Weißt du, wir ______ uns auch mal in einer Kneipe ______.',
+      options: ['haben …… getroffen', 'haben ……. getrefft'],
+      answer: 0
+    },
+    {
+      question: '______ er für dich Blumen ______?',
+      options: ['hat ..... mitbringen', 'hat ….. mitgebracht'],
+      answer: 1
+    },
+    {
+      question: 'Was ______er ______?',
+      options: ['hat …. angezogen', 'hat ….. an', 'hat ….. geanzieht'],
+      answer: 0
+    },
+    {
+      question: 'Mensch! ______ ihr nichts ______? Zeig doch!',
+      options: ['habt ........ gefotografiert', 'habt ….. fotografiert'],
+      answer: 1
+    },
+    {
+      question: 'Hoffentlich ______ Peter seine Kamera nicht ______.',
+      options: ['hat .... vergesst', 'hat …. vergessen', 'hat … gevergesst'],
+      answer: 1
+    },
+    {
+      question: '______ du auch Geschenke ______?',
+      options: ['hast  ….  bekommen', 'hat ….. gebekommen', 'hast ….. bekommt'],
+      answer: 0
+    },
+    {
+      question: '______ die Geschenke dir ______?',
+      options: ['haben ........ gefallen', 'hat ….. gefallt', 'hat …. gefallen'],
+      answer: 0
+    },
+    {
+      question: 'Das war bestimmt eine tolle Party. Ich muss aber schnell los. Ich habe gleich ein Meeting und habe mich leider ______.',
+      options: ['verspäten', 'verspätung', 'verspätet'],
+      answer: 2
+    }
   ],
   B1: [
-    // B1 seviyesi soruları
+    {
+      question: 'In Großstädten gibt es viele Herausforderungen, besonders im Bereich Verkehr. _____ die Bevölkerungsdichte in Großstädten Tag für Tag steigt, nehmen auch die Verkehrsprobleme zu.',
+      options: ['Obwohl', 'Während', 'Wenn'],
+      answer: 1
+    },
+    {
+      question: '-2- viele Menschen in die Stadt ziehen, gibt es oft zu wenig Platz auf den Straßen.',
+      options: ['als', 'deshalb', 'Weil'],
+      answer: 2
+    },
+    {
+      question: '-3- viele Autos unterwegs sind, dauert es oft lange, bis man an sein Ziel gelangt.',
+      options: ['Da', 'Damit', 'Wenn'],
+      answer: 0
+    },
+    {
+      question: '-4- die öffentlichen Verkehrsmittel modernisiert werden, gibt es häufig Verspätungen und Überfüllungen.',
+      options: ['Trotzdem', 'Obwohl', 'Weil'],
+      answer: 1
+    },
+    {
+      question: 'Viele Menschen versuchen, alternative Routen zu finden. -5- der ständige Stau ist nervig.',
+      options: ['Weil', 'Deshalb', 'Denn'],
+      answer: 2
+    },
+    {
+      question: '-6- man oft im Stau steht, sollte man sich über eine andere Verkehrsmöglichkeit Gedanken machen.',
+      options: ['Wenn', 'Denn', 'Obwohl'],
+      answer: 0
+    },
+    {
+      question: '-7- die Technologie voranschreitet, braucht man immer noch intelligentere Verkehrssysteme,',
+      options: ['Denn', 'Obwohl', 'Wenn'],
+      answer: 1
+    },
+    {
+      question: '-8- den Verkehr zu regeln.',
+      options: ['um', 'damit', 'weil'],
+      answer: 0
+    },
+    {
+      question: 'Ich __________, dass er es nicht böse __________.',
+      options: ['habe verstanden - gemeint hat', 'bin verstanden – gemein ist', 'habe verstehe – habt gemeint'],
+      answer: 0
+    },
+    {
+      question: 'Maria __________, dass sie doch nach London reist.',
+      options: ['ist sich entschieden', 'hat sich entscheiden', 'hat sich entschieden'],
+      answer: 2
+    },
+    {
+      question: 'Wir __________, Herrn Müller anzurufen.',
+      options: ['sind vergessen', 'haben vergessen', 'haben vergisst'],
+      answer: 1
+    },
+    {
+      question: 'Er  __________ den Weg mehrmals __________.',
+      options: ['hat - beschrieben', 'ist - beschrieben', 'habe - beschreiben'],
+      answer: 0
+    },
+    {
+      question: 'Er __________ letzte Woche ein unvergessliches Konzert ____.',
+      options: ['hast - erleben', 'hat - erlebt', 'ist - erlebt'],
+      answer: 1
+    },
+    {
+      question: 'Was _____ du ihm gestern  __________?',
+      options: ['hast - empfohlen', 'hast - empfehlen', 'habst - empfohlenen'],
+      answer: 0
+    },
+    {
+      question: '___ du das neue Buch von dem Autor __________?',
+      options: ['Bist - gelesen', 'Habst - geliest', 'Hast - gelesen'],
+      answer: 2
+    },
+    {
+      question: 'Frau Sanchez  __________ ihre Sprachkenntnisse ___ .',
+      options: ['hat - verbessert', 'haben - verbessert', 'haben - verbessert'],
+      answer: 0
+    },
+    {
+      question: 'Wir __________ die Präsentation _________.',
+      options: ['haben - vorbereiten', 'sind - vorbereitet', 'haben - vorbereitet'],
+      answer: 2
+    },
+    {
+      question: 'Er __________ jedes Mal eine interessante Geschichte _____.',
+      options: ['hat -  erfunden', 'ist - erfunden', 'habt - erfunden'],
+      answer: 0
+    }
   ]
 };
 
