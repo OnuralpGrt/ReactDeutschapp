@@ -5,6 +5,7 @@ import MultipleChoice from './MultipleChoice';
 import SatzeBilden from './SatzeBilden';
 import Leseverstehen from './Leseverstehen';
 import Wortschatz from './Wortschatz';
+import Zuordnung from './Zuordnung';
 
 const menuItems = [
   { title: 'Multiple Choice', image: 'MultıpleChoıce.png', route: 'multiple-choice' },
@@ -66,6 +67,9 @@ function App() {
         case 'wortschatz':
           console.log('Wortschatz bileşeni render ediliyor');
           return <Wortschatz />;
+        case 'zuordnung':
+          console.log('Zuordnung bileşeni render ediliyor');
+          return <Zuordnung />;
         default:
           return (
             <Container maxWidth="lg" sx={{ py: 4, backgroundColor: '#FFF3E0' }}>
