@@ -84,32 +84,31 @@ const exercises = {
       blanks: [
         { answer: "Welches" },
         { answer: "Dieses" },
-        { answer: "Welche" },
         { answer: "dieses" },
         { answer: "Diese" },
-        { answer: "diesen" },
-        { answer: "diese" },
+        { answer: "Diesen" },
+        { answer: "Diese" },
         { answer: "Welchen" },
         { answer: "Diesen" },
-        { answer: "diese" },
         { answer: "Diese" },
-        { answer: "diesen" },
-        { answer: "diese" },
+        { answer: "Diese" },
+        { answer: "Diesen" },
+        { answer: "Diese" },
         { answer: "Welche" },
-        { answer: "welcher" },
-        { answer: "dieser" },
+        { answer: "Welchen" },
+        { answer: "Dieser" },
         { answer: "Welche" },
-        { answer: "Welche" },
-        { answer: "diese" },
-        { answer: "diese" },
         { answer: "Welche" },
         { answer: "Diese" },
         { answer: "Diese" },
-        { answer: "diese" },
         { answer: "Welche" },
-        { answer: "diese" },
-        { answer: "diesen" },
-        { answer: "diese" }
+        { answer: "Diese" },
+        { answer: "Diese" },
+        { answer: "Diese" },
+        { answer: "Welche" },
+        { answer: "Diese" },
+        { answer: "Diesen" },
+        { answer: "Diese" }
       ]
     },
     {
@@ -734,6 +733,33 @@ function Grammatik() {
               }}
             >
               {level}
+            </Button>
+          ))}
+        </Box>
+      </Box>
+
+      {/* Çalışma Listesi */}
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="subtitle1" sx={{ color: '#E65100', mb: 1 }}>Çalışma Seçin:</Typography>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+          {exercises[currentLevel].map((ex, idx) => (
+            <Button
+              key={ex.id}
+              variant={currentExercise === idx ? "contained" : "outlined"}
+              onClick={() => handleExerciseChange(idx)}
+              sx={{
+                backgroundColor: currentExercise === idx ? '#E65100' : 'transparent',
+                color: currentExercise === idx ? 'white' : '#E65100',
+                borderColor: '#E65100',
+                fontSize: '0.95rem',
+                minWidth: 120,
+                '&:hover': {
+                  backgroundColor: currentExercise === idx ? '#E65100' : '#FFF8E1',
+                  borderColor: '#E65100',
+                }
+              }}
+            >
+              {ex.title}
             </Button>
           ))}
         </Box>
