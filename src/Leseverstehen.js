@@ -251,6 +251,217 @@ Wir möchten zusammen  deutsche Musik machen. Deshalb lerne ich gerade Deutsch. 
         }
       ]
     }
+  ],
+  A2: [
+    {
+      id: 1,
+      title: "Ein Tag in der Stadt",
+      text: `Heute ist Samstag und ich gehe in die Stadt. Zuerst gehe ich in die Bibliothek, um ein Buch zurückzugeben. Dann möchte ich in einem Café einen Kaffee trinken. Nach dem Kaffee gehe ich zum Supermarkt, um Lebensmittel einzukaufen. Ich brauche Brot, Milch und Obst.
+
+Am Nachmittag treffe ich mich mit meiner Freundin Lisa. Wir gehen zusammen ins Kino. Der Film beginnt um 15 Uhr. Nach dem Film essen wir in einem italienischen Restaurant zu Abend. Das Restaurant ist sehr gut und nicht teuer.
+
+Um 20 Uhr fahre ich mit dem Bus nach Hause. Es war ein schöner Tag!`,
+      type: "open_ended_quiz",
+      questions: [
+        {
+          question: "Welchen Tag ist es heute?",
+          answer: "Es ist Samstag.",
+          hint: "Metnin başlangıcına bakın."
+        },
+        {
+          question: "Was macht die Person zuerst?",
+          answer: "Die Person geht in die Bibliothek, um ein Buch zurückzugeben.",
+          hint: "İlk aktiviteyi bulun."
+        },
+        {
+          question: "Wo trinkt die Person Kaffee?",
+          answer: "Die Person trinkt Kaffee in einem Café.",
+          hint: "Kahve içilen yeri bulun."
+        },
+        {
+          question: "Was kauft die Person im Supermarkt?",
+          answer: "Die Person kauft Brot, Milch und Obst.",
+          hint: "Süpermarkette alınan ürünleri bulun."
+        },
+        {
+          question: "Mit wem trifft sich die Person am Nachmittag?",
+          answer: "Die Person trifft sich mit ihrer Freundin Lisa.",
+          hint: "Öğleden sonra kiminle buluştuğunu bulun."
+        },
+        {
+          question: "Wann beginnt der Film?",
+          answer: "Der Film beginnt um 15 Uhr.",
+          hint: "Filmin başlama saatini bulun."
+        },
+        {
+          question: "Wo essen sie zu Abend?",
+          answer: "Sie essen in einem italienischen Restaurant zu Abend.",
+          hint: "Akşam yemeği yedikleri yeri bulun."
+        },
+        {
+          question: "Wie fährt die Person nach Hause?",
+          answer: "Die Person fährt mit dem Bus nach Hause.",
+          hint: "Eve nasıl döndüğünü bulun."
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: "Mein Traumurlaub",
+      text: `Mein Traumurlaub wäre eine Reise nach Japan. Ich möchte Tokio besuchen, die größte Stadt Japans. Dort möchte ich den berühmten Fischmarkt Tsukiji sehen und Sushi essen. Ich interessiere mich sehr für japanische Kultur und Geschichte.
+
+Am liebsten würde ich im Frühling reisen, wenn die Kirschblüten blühen. Das ist eine sehr schöne Zeit in Japan. Ich möchte auch einen traditionellen Kimono anprobieren und an einer Teezeremonie teilnehmen.
+
+Für die Reise muss ich viel Geld sparen. Ich schaue mir schon jetzt Reiseführer an und lerne ein bisschen Japanisch. Meine Freunde finden meine Pläne sehr interessant.`,
+      type: "richtig_falsch_quiz",
+      questions: [
+        {
+          question: "Die Person möchte nach China reisen.",
+          answer: "falsch",
+          hint: "Hedef ülkeyi kontrol edin."
+        },
+        {
+          question: "Tokio ist die größte Stadt Japans.",
+          answer: "richtig",
+          hint: "Tokio'nun Japonya'daki konumunu kontrol edin."
+        },
+        {
+          question: "Die Person möchte im Winter reisen.",
+          answer: "falsch",
+          hint: "Seyahat mevsimini kontrol edin."
+        },
+        {
+          question: "Die Person lernt schon Japanisch.",
+          answer: "richtig",
+          hint: "Dil öğrenme durumunu kontrol edin."
+        },
+        {
+          question: "Die Freunde finden die Pläne langweilig.",
+          answer: "falsch",
+          hint: "Arkadaşların tepkisini kontrol edin."
+        }
+      ]
+    },
+    {
+      id: 3,
+      title: "Ein neuer Job",
+      text: `Ich suche einen neuen Job. Ich habe Wirtschaft studiert und fünf Jahre Erfahrung im Marketing. Ich kann gut mit Menschen umgehen und spreche fließend Englisch und Französisch. Ich suche eine Stelle in einer internationalen Firma.
+
+Meine Stärken sind:
+- Teamarbeit
+- Projektmanagement
+- Kreativität
+- Zeitmanagement
+
+Ich möchte gerne:
+- Vollzeit arbeiten
+- Ein gutes Gehalt bekommen
+- In einer modernen Firma arbeiten
+- Mich weiterbilden können
+
+Bitte kontaktieren Sie mich, wenn Sie eine passende Stelle haben.`,
+      tasks: [
+        {
+          type: "multiple_choice",
+          title: "Aufgabe 1: Lesen Sie den Text. Was erfahren Sie über die Person? (Mehrere Antworten sind möglich)",
+          questions: [
+            {
+              question: "Die Person hat Jura studiert.",
+              answer: false,
+              hint: "Eğitim alanını kontrol edin."
+            },
+            {
+              question: "Die Person spricht drei Sprachen.",
+              answer: true,
+              hint: "Konuştuğu dilleri sayın."
+            },
+            {
+              question: "Die Person möchte Teilzeit arbeiten.",
+              answer: false,
+              hint: "Çalışma şeklini kontrol edin."
+            },
+            {
+              question: "Die Person hat Erfahrung im Marketing.",
+              answer: true,
+              hint: "İş deneyimini kontrol edin."
+            },
+            {
+              question: "Die Person möchte in einer kleinen Firma arbeiten.",
+              answer: false,
+              hint: "Firma tercihini kontrol edin."
+            }
+          ]
+        },
+        {
+          type: "open_ended",
+          title: "Aufgabe 2: Beantworten Sie die Fragen in vollständigen Sätzen.",
+          questions: [
+            {
+              question: "Was hat die Person studiert?",
+              answer: "Die Person hat Wirtschaft studiert.",
+              hint: "Eğitim alanını bulun."
+            },
+            {
+              question: "Welche Sprachen spricht die Person?",
+              answer: "Die Person spricht Deutsch, Englisch und Französisch.",
+              hint: "Konuştuğu dilleri bulun."
+            },
+            {
+              question: "Was sind die Stärken der Person?",
+              answer: "Die Stärken der Person sind Teamarbeit, Projektmanagement, Kreativität und Zeitmanagement.",
+              hint: "Güçlü yönlerini bulun."
+            },
+            {
+              question: "Was möchte die Person in einem neuen Job?",
+              answer: "Die Person möchte Vollzeit arbeiten, ein gutes Gehalt bekommen, in einer modernen Firma arbeiten und sich weiterbilden können.",
+              hint: "İş beklentilerini bulun."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 4,
+      title: "Gesund leben",
+      text: `Gesund zu leben ist wichtig für mich. Ich esse viel Obst und Gemüse und trinke jeden Tag zwei Liter Wasser. Ich gehe dreimal pro Woche ins Fitnessstudio und mache Yoga. Ich schlafe mindestens sieben Stunden pro Nacht.
+
+Ich rauche nicht und trinke nur selten Alkohol. Ich versuche, Stress zu vermeiden und mache regelmäßig Pausen bei der Arbeit. Am Wochenende gehe ich oft spazieren oder fahre Rad.
+
+Meine Freunde sagen, ich lebe zu gesund, aber ich fühle mich gut dabei.`,
+      type: "multiple_choice_quiz",
+      questions: [
+        {
+          question: "Wie viel Wasser trinkt die Person pro Tag?",
+          options: ["Ein Liter", "Zwei Liter", "Drei Liter", "Vier Liter"],
+          answer: 1,
+          hint: "Günlük su miktarını bulun."
+        },
+        {
+          question: "Wie oft geht die Person ins Fitnessstudio?",
+          options: ["Einmal pro Woche", "Zweimal pro Woche", "Dreimal pro Woche", "Täglich"],
+          answer: 2,
+          hint: "Spor salonuna gidiş sıklığını kontrol edin."
+        },
+        {
+          question: "Wie lange schläft die Person pro Nacht?",
+          options: ["Fünf Stunden", "Sechs Stunden", "Sieben Stunden", "Acht Stunden"],
+          answer: 2,
+          hint: "Gece uyku süresini bulun."
+        },
+        {
+          question: "Was macht die Person am Wochenende?",
+          options: ["Nur zu Hause bleiben", "Spazieren gehen oder Rad fahren", "Im Fitnessstudio trainieren", "Yoga machen"],
+          answer: 1,
+          hint: "Hafta sonu aktivitelerini kontrol edin."
+        },
+        {
+          question: "Was denken die Freunde über den Lebensstil?",
+          options: ["Sie finden ihn gut", "Sie finden ihn zu gesund", "Sie finden ihn zu ungesund", "Sie interessieren sich nicht dafür"],
+          answer: 1,
+          hint: "Arkadaşların düşüncelerini bulun."
+        }
+      ]
+    }
   ]
 };
 
